@@ -1,1151 +1,1277 @@
---[[
-
-		Gui2Lua™
-		10zOfficial
-		Version 1.0.0
-
-]]
-
-
--- Instances
-
-local MarsHubUI = Instance.new("ScreenGui")
-local UIHolder = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local MainFrame = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local UITitle = Instance.new("TextLabel")
-local ButtonHolder = Instance.new("Frame")
-local Home = Instance.new("ImageButton")
-local Scripts = Instance.new("ImageButton")
-local Visuals = Instance.new("ImageButton")
-local UIListLayout = Instance.new("UIListLayout")
-local Settings = Instance.new("ImageButton")
-local DropShadowHolder = Instance.new("Frame")
-local DropShadow = Instance.new("ImageLabel")
-local SettingElement = Instance.new("Folder")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local textlabel1 = Instance.new("TextLabel")
-local label1 = Instance.new("TextLabel")
-local button2 = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local checkmark = Instance.new("ImageLabel")
-local textlabel2 = Instance.new("TextLabel")
-local label2 = Instance.new("TextLabel")
-local button3 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local checkmark_2 = Instance.new("ImageLabel")
-local textlabel3 = Instance.new("TextLabel")
-local label3 = Instance.new("TextLabel")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local UICorner_6 = Instance.new("UICorner")
-local textlabel4 = Instance.new("TextLabel")
-local label1_2 = Instance.new("TextLabel")
-local textlabel5 = Instance.new("TextLabel")
-local label1_3 = Instance.new("TextLabel")
-local textlabel6 = Instance.new("TextLabel")
-local label1_4 = Instance.new("TextLabel")
-local Frame_2 = Instance.new("Frame")
-local TextBox = Instance.new("TextBox")
-local button1 = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local checkmark_3 = Instance.new("ImageLabel")
-local Frame_3 = Instance.new("Frame")
-local TextBox_2 = Instance.new("TextBox")
-local VisualsElement = Instance.new("Folder")
-local Holder = Instance.new("Frame")
-local cornerbox = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
-local button1_2 = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local checkmark_4 = Instance.new("ImageLabel")
-local TextLabel = Instance.new("TextLabel")
-local skeletonesp = Instance.new("TextLabel")
-local UICorner_10 = Instance.new("UICorner")
-local button1_3 = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local checkmark_5 = Instance.new("ImageLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local deityesp = Instance.new("TextLabel")
-local UICorner_12 = Instance.new("UICorner")
-local button1_4 = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local checkmark_6 = Instance.new("ImageLabel")
-local TextLabel_3 = Instance.new("TextLabel")
-local aimlockframe = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local button1_5 = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
-local checkmark_7 = Instance.new("ImageLabel")
-local notification = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
-local DropShadowHolder_2 = Instance.new("Frame")
-local DropShadow_2 = Instance.new("ImageLabel")
-local TextLabel_6 = Instance.new("TextLabel")
-local TextLabel_7 = Instance.new("TextLabel")
-local TextLabel_8 = Instance.new("TextLabel")
-local UILogo = Instance.new("ImageLabel")
-local Audios = Instance.new("Folder")
-local HomeElement = Instance.new("Folder")
-local Frame_4 = Instance.new("Frame")
-local plrembed = Instance.new("ImageLabel")
-local UICorner_17 = Instance.new("UICorner")
-local gamedetection = Instance.new("TextLabel")
-local detection = Instance.new("TextLabel")
-local plrtitle = Instance.new("TextLabel")
-local credits = Instance.new("TextLabel")
-local ScriptElement = Instance.new("Folder")
-local ScriptsHolder = Instance.new("Frame")
-local script1 = Instance.new("TextButton")
-local UICorner_18 = Instance.new("UICorner")
-local TextLabel_9 = Instance.new("TextLabel")
-local TextLabel_10 = Instance.new("TextLabel")
-local Frame_5 = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
-local TextLabel_11 = Instance.new("TextLabel")
-local TextLabel_12 = Instance.new("TextLabel")
-local button1_6 = Instance.new("TextButton")
-local UICorner_20 = Instance.new("UICorner")
-local checkmark_8 = Instance.new("ImageLabel")
-local notification_2 = Instance.new("Frame")
-local DropShadowHolder_3 = Instance.new("Frame")
-local DropShadow_3 = Instance.new("ImageLabel")
-local UICorner_21 = Instance.new("UICorner")
-local TextLabel_13 = Instance.new("TextLabel")
-local TextLabel_14 = Instance.new("TextLabel")
-
--- Properties
-
-MarsHubUI.Name = "MarsHubUI"
-MarsHubUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-MarsHubUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-UIHolder.Name = "UIHolder"
-UIHolder.Parent = MarsHubUI
-UIHolder.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
-UIHolder.BorderColor3 = Color3.new(0, 0, 0)
-UIHolder.BorderSizePixel = 0
-UIHolder.Position = UDim2.new(0.23831062, 0, 0.101271741, 0)
-UIHolder.Size = UDim2.new(0, 531, 0, 292)
-
-UICorner.Parent = UIHolder
-
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = UIHolder
-MainFrame.BackgroundColor3 = Color3.new(0.105882, 0.105882, 0.105882)
-MainFrame.BorderColor3 = Color3.new(0, 0, 0)
-MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.114877589, 0, 0.174657539, 0)
-MainFrame.Size = UDim2.new(0, 468, 0, 239)
-
-UICorner_2.Parent = MainFrame
-
-UITitle.Name = "UITitle"
-UITitle.Parent = UIHolder
-UITitle.BackgroundColor3 = Color3.new(1, 1, 1)
-UITitle.BackgroundTransparency = 1
-UITitle.BorderColor3 = Color3.new(0, 0, 0)
-UITitle.BorderSizePixel = 0
-UITitle.Position = UDim2.new(0.386999995, 0, 0.0500000007, 0)
-UITitle.Size = UDim2.new(0, 156, 0, 23)
-UITitle.Font = Enum.Font.FredokaOne
-UITitle.Text = "Mars Hub"
-UITitle.TextColor3 = Color3.new(1, 1, 1)
-UITitle.TextSize = 25
-UITitle.TextWrapped = true
-
-ButtonHolder.Name = "ButtonHolder"
-ButtonHolder.Parent = UIHolder
-ButtonHolder.BackgroundColor3 = Color3.new(1, 1, 1)
-ButtonHolder.BackgroundTransparency = 1
-ButtonHolder.BorderColor3 = Color3.new(0, 0, 0)
-ButtonHolder.BorderSizePixel = 0
-ButtonHolder.Position = UDim2.new(0.00941619556, 0, 0.202054799, 0)
-ButtonHolder.Size = UDim2.new(0, 50, 0, 225)
-
-Home.Name = "Home"
-Home.Parent = ButtonHolder
-Home.BackgroundColor3 = Color3.new(1, 1, 1)
-Home.BackgroundTransparency = 1
-Home.BorderColor3 = Color3.new(0, 0, 0)
-Home.BorderSizePixel = 0
-Home.Position = UDim2.new(0.119999997, 0, 0.0533333346, 0)
-Home.Size = UDim2.new(0, 37, 0, 38)
-Home.Image = "rbxassetid://10723407389"
-Home.ScaleType = Enum.ScaleType.Fit
-
-Scripts.Name = "Scripts"
-Scripts.Parent = ButtonHolder
-Scripts.BackgroundColor3 = Color3.new(1, 1, 1)
-Scripts.BackgroundTransparency = 1
-Scripts.BorderColor3 = Color3.new(0, 0, 0)
-Scripts.BorderSizePixel = 0
-Scripts.Position = UDim2.new(0.119999997, 0, 0.302222222, 0)
-Scripts.Size = UDim2.new(0, 37, 0, 38)
-Scripts.Image = "rbxassetid://10734943448"
-
-Visuals.Name = "Visuals"
-Visuals.Parent = ButtonHolder
-Visuals.BackgroundColor3 = Color3.new(1, 1, 1)
-Visuals.BackgroundTransparency = 1
-Visuals.BorderColor3 = Color3.new(0, 0, 0)
-Visuals.BorderSizePixel = 0
-Visuals.Position = UDim2.new(0.119999997, 0, 0.804444432, 0)
-Visuals.Size = UDim2.new(0, 37, 0, 38)
-Visuals.Image = "rbxassetid://10734906975"
-
-UIListLayout.Parent = ButtonHolder
-UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-UIListLayout.Padding = UDim.new(0, 18)
-
-Settings.Name = "Settings"
-Settings.Parent = ButtonHolder
-Settings.BackgroundColor3 = Color3.new(1, 1, 1)
-Settings.BackgroundTransparency = 1
-Settings.BorderColor3 = Color3.new(0, 0, 0)
-Settings.BorderSizePixel = 0
-Settings.Position = UDim2.new(0.119999997, 0, 0.551111102, 0)
-Settings.Size = UDim2.new(0, 37, 0, 38)
-Settings.Image = "rbxassetid://10734950309"
-
-DropShadowHolder.Name = "DropShadowHolder"
-DropShadowHolder.Parent = UIHolder
-DropShadowHolder.BackgroundTransparency = 1
-DropShadowHolder.BorderSizePixel = 0
-DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
-DropShadowHolder.ZIndex = 0
-
-DropShadow.Name = "DropShadow"
-DropShadow.Parent = DropShadowHolder
-DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
-DropShadow.BackgroundTransparency = 1
-DropShadow.BorderSizePixel = 0
-DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
-DropShadow.Size = UDim2.new(1, 47, 1, 47)
-DropShadow.ZIndex = 0
-DropShadow.Image = "rbxassetid://6014261993"
-DropShadow.ImageColor3 = Color3.new(0, 0, 0)
-DropShadow.ImageTransparency = 0.5
-DropShadow.ScaleType = Enum.ScaleType.Slice
-DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
-
-SettingElement.Name = "SettingElement"
-SettingElement.Parent = UIHolder
-
-ScrollingFrame.Parent = SettingElement
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
-ScrollingFrame.BackgroundTransparency = 1
-ScrollingFrame.BorderColor3 = Color3.new(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0.116760828, 0, 0.174657539, 0)
-ScrollingFrame.Size = UDim2.new(0, 469, 0, 239)
-ScrollingFrame.Visible = false
-ScrollingFrame.ScrollBarThickness = 7
-
-textlabel1.Name = "textlabel1"
-textlabel1.Parent = ScrollingFrame
-textlabel1.BackgroundColor3 = Color3.new(1, 1, 1)
-textlabel1.BackgroundTransparency = 1
-textlabel1.BorderColor3 = Color3.new(0, 0, 0)
-textlabel1.BorderSizePixel = 0
-textlabel1.Position = UDim2.new(0.284000009, 0, 0.0350000001, 0)
-textlabel1.Size = UDim2.new(0, 200, 0, 30)
-textlabel1.Font = Enum.Font.Unknown
-textlabel1.Text = "Disable In-Game Shadows"
-textlabel1.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-textlabel1.TextSize = 17
-textlabel1.TextXAlignment = Enum.TextXAlignment.Left
-
-label1.Name = "label1"
-label1.Parent = textlabel1
-label1.BackgroundColor3 = Color3.new(1, 1, 1)
-label1.BackgroundTransparency = 1
-label1.BorderColor3 = Color3.new(0, 0, 0)
-label1.BorderSizePixel = 0
-label1.Position = UDim2.new(0.0762420669, 0, 0.766666651, 0)
-label1.Size = UDim2.new(0, 206, 0, 23)
-label1.Font = Enum.Font.Unknown
-label1.Text = "Removes all shadows inside the game that can cause lag / lose fps"
-label1.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-label1.TextSize = 10
-label1.TextTransparency = 0.5
-label1.TextWrapped = true
-label1.TextXAlignment = Enum.TextXAlignment.Left
-
-button2.Name = "button2"
-button2.Parent = ScrollingFrame
-button2.BackgroundColor3 = Color3.new(1, 1, 1)
-button2.BorderColor3 = Color3.new(0, 0, 0)
-button2.BorderSizePixel = 0
-button2.Position = UDim2.new(0.149253726, 0, 0.138075307, 0)
-button2.Size = UDim2.new(0, 34, 0, 33)
-button2.Font = Enum.Font.SourceSans
-button2.Text = ""
-button2.TextColor3 = Color3.new(0, 0, 0)
-button2.TextSize = 14
-
-UICorner_3.Parent = button2
-
-checkmark.Name = "checkmark"
-checkmark.Parent = button2
-checkmark.BackgroundColor3 = Color3.new(1, 1, 1)
-checkmark.BackgroundTransparency = 1
-checkmark.BorderColor3 = Color3.new(0, 0, 0)
-checkmark.BorderSizePixel = 0
-checkmark.Position = UDim2.new(0.147, 0, 0.200000003, 0)
-checkmark.Size = UDim2.new(0, 24, 0, 22)
-checkmark.Visible = false
-checkmark.Image = "rbxassetid://10709790644"
-
-textlabel2.Name = "textlabel2"
-textlabel2.Parent = ScrollingFrame
-textlabel2.BackgroundColor3 = Color3.new(1, 1, 1)
-textlabel2.BackgroundTransparency = 1
-textlabel2.BorderColor3 = Color3.new(0, 0, 0)
-textlabel2.BorderSizePixel = 0
-textlabel2.Position = UDim2.new(0.284000009, 0, 0.140000001, 0)
-textlabel2.Size = UDim2.new(0, 200, 0, 30)
-textlabel2.Font = Enum.Font.Unknown
-textlabel2.Text = "Boost FPS"
-textlabel2.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-textlabel2.TextSize = 17
-textlabel2.TextXAlignment = Enum.TextXAlignment.Left
-
-label2.Name = "label2"
-label2.Parent = textlabel2
-label2.BackgroundColor3 = Color3.new(1, 1, 1)
-label2.BackgroundTransparency = 1
-label2.BorderColor3 = Color3.new(0, 0, 0)
-label2.BorderSizePixel = 0
-label2.Position = UDim2.new(0.0412420668, 0, 0.766666651, 0)
-label2.Size = UDim2.new(0, 206, 0, 23)
-label2.Font = Enum.Font.Unknown
-label2.Text = "Boost your FPS to make your game more smoother and way faster"
-label2.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-label2.TextSize = 10
-label2.TextTransparency = 0.5
-label2.TextWrapped = true
-label2.TextXAlignment = Enum.TextXAlignment.Left
-
-button3.Name = "button3"
-button3.Parent = ScrollingFrame
-button3.BackgroundColor3 = Color3.new(1, 1, 1)
-button3.BorderColor3 = Color3.new(0, 0, 0)
-button3.BorderSizePixel = 0
-button3.Position = UDim2.new(0.149000004, 0, 0.245000005, 0)
-button3.Size = UDim2.new(0, 34, 0, 33)
-button3.Font = Enum.Font.SourceSans
-button3.Text = ""
-button3.TextColor3 = Color3.new(0, 0, 0)
-button3.TextSize = 14
-
-UICorner_4.Parent = button3
-
-checkmark_2.Name = "checkmark"
-checkmark_2.Parent = button3
-checkmark_2.BackgroundColor3 = Color3.new(1, 1, 1)
-checkmark_2.BackgroundTransparency = 1
-checkmark_2.BorderColor3 = Color3.new(0, 0, 0)
-checkmark_2.BorderSizePixel = 0
-checkmark_2.Position = UDim2.new(0.147, 0, 0.200000003, 0)
-checkmark_2.Size = UDim2.new(0, 24, 0, 22)
-checkmark_2.Visible = false
-checkmark_2.Image = "rbxassetid://10709790644"
-
-textlabel3.Name = "textlabel3"
-textlabel3.Parent = ScrollingFrame
-textlabel3.BackgroundColor3 = Color3.new(1, 1, 1)
-textlabel3.BackgroundTransparency = 1
-textlabel3.BorderColor3 = Color3.new(0, 0, 0)
-textlabel3.BorderSizePixel = 0
-textlabel3.Position = UDim2.new(0.284000009, 0, 0.245000005, 0)
-textlabel3.Size = UDim2.new(0, 200, 0, 30)
-textlabel3.Font = Enum.Font.Unknown
-textlabel3.Text = "Remove SFX"
-textlabel3.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-textlabel3.TextSize = 17
-textlabel3.TextXAlignment = Enum.TextXAlignment.Left
-
-label3.Name = "label3"
-label3.Parent = textlabel3
-label3.BackgroundColor3 = Color3.new(1, 1, 1)
-label3.BackgroundTransparency = 1
-label3.BorderColor3 = Color3.new(0, 0, 0)
-label3.BorderSizePixel = 0
-label3.Position = UDim2.new(0.0412420668, 0, 0.766666651, 0)
-label3.Size = UDim2.new(0, 206, 0, 23)
-label3.Font = Enum.Font.Unknown
-label3.Text = "Finds all the sounds in the game and turns them off"
-label3.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-label3.TextSize = 10
-label3.TextTransparency = 0.5
-label3.TextWrapped = true
-label3.TextXAlignment = Enum.TextXAlignment.Left
-
-Frame.Parent = ScrollingFrame
-Frame.BackgroundColor3 = Color3.new(0.305882, 0.309804, 0.309804)
-Frame.BackgroundTransparency = 0.30000001192092896
-Frame.BorderColor3 = Color3.new(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.558635414, 0, 0.369427413, 0)
-Frame.Size = UDim2.new(0, 154, 0, 23)
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
-TextButton.BorderColor3 = Color3.new(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(-0.0500000007, 0, -0.0430000015, 0)
-TextButton.Size = UDim2.new(0, 24, 0, 25)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = ""
-TextButton.TextColor3 = Color3.new(0, 0, 0)
-TextButton.TextSize = 14
-
-UICorner_5.Parent = TextButton
-
-UICorner_6.Parent = Frame
-
-textlabel4.Name = "textlabel4"
-textlabel4.Parent = ScrollingFrame
-textlabel4.BackgroundColor3 = Color3.new(1, 1, 1)
-textlabel4.BackgroundTransparency = 1
-textlabel4.BorderColor3 = Color3.new(0, 0, 0)
-textlabel4.BorderSizePixel = 0
-textlabel4.Position = UDim2.new(0, 29, 0, 203)
-textlabel4.Size = UDim2.new(0, 200, 0, 30)
-textlabel4.Font = Enum.Font.Unknown
-textlabel4.Text = "Customize FOV"
-textlabel4.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-textlabel4.TextSize = 13
-textlabel4.TextXAlignment = Enum.TextXAlignment.Left
-
-label1_2.Name = "label1"
-label1_2.Parent = textlabel4
-label1_2.BackgroundColor3 = Color3.new(1, 1, 1)
-label1_2.BackgroundTransparency = 1
-label1_2.BorderColor3 = Color3.new(0, 0, 0)
-label1_2.BorderSizePixel = 0
-label1_2.Position = UDim2.new(-0.0637579337, 0, 0.666666687, 0)
-label1_2.Size = UDim2.new(0, 206, 0, 23)
-label1_2.Font = Enum.Font.Unknown
-label1_2.Text = "Customizes your in-game Field of View to give you a bigger view of the game"
-label1_2.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-label1_2.TextSize = 10
-label1_2.TextTransparency = 0.5
-label1_2.TextWrapped = true
-label1_2.TextXAlignment = Enum.TextXAlignment.Left
-
-textlabel5.Name = "textlabel5"
-textlabel5.Parent = ScrollingFrame
-textlabel5.BackgroundColor3 = Color3.new(1, 1, 1)
-textlabel5.BackgroundTransparency = 1
-textlabel5.BorderColor3 = Color3.new(0, 0, 0)
-textlabel5.BorderSizePixel = 0
-textlabel5.Position = UDim2.new(0, 29, 0, 264)
-textlabel5.Size = UDim2.new(0, 200, 0, 30)
-textlabel5.Font = Enum.Font.Unknown
-textlabel5.Text = "Customize Speed"
-textlabel5.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-textlabel5.TextSize = 13
-textlabel5.TextXAlignment = Enum.TextXAlignment.Left
-
-label1_3.Name = "label1"
-label1_3.Parent = textlabel5
-label1_3.BackgroundColor3 = Color3.new(1, 1, 1)
-label1_3.BackgroundTransparency = 1
-label1_3.BorderColor3 = Color3.new(0, 0, 0)
-label1_3.BorderSizePixel = 0
-label1_3.Position = UDim2.new(-0.0637579337, 0, 0.666666687, 0)
-label1_3.Size = UDim2.new(0, 206, 0, 23)
-label1_3.Font = Enum.Font.Unknown
-label1_3.Text = "Customizes your in-game walkspeed to either make you go faster or slower"
-label1_3.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-label1_3.TextSize = 10
-label1_3.TextTransparency = 0.5
-label1_3.TextWrapped = true
-label1_3.TextXAlignment = Enum.TextXAlignment.Left
-
-textlabel6.Name = "textlabel6"
-textlabel6.Parent = ScrollingFrame
-textlabel6.BackgroundColor3 = Color3.new(1, 1, 1)
-textlabel6.BackgroundTransparency = 1
-textlabel6.BorderColor3 = Color3.new(0, 0, 0)
-textlabel6.BorderSizePixel = 0
-textlabel6.Position = UDim2.new(0, 29, 0, 320)
-textlabel6.Size = UDim2.new(0, 200, 0, 30)
-textlabel6.Font = Enum.Font.Unknown
-textlabel6.Text = "Customize Jump"
-textlabel6.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-textlabel6.TextSize = 13
-textlabel6.TextXAlignment = Enum.TextXAlignment.Left
-
-label1_4.Name = "label1"
-label1_4.Parent = textlabel6
-label1_4.BackgroundColor3 = Color3.new(1, 1, 1)
-label1_4.BackgroundTransparency = 1
-label1_4.BorderColor3 = Color3.new(0, 0, 0)
-label1_4.BorderSizePixel = 0
-label1_4.Position = UDim2.new(-0.0637579337, 0, 0.666666687, 0)
-label1_4.Size = UDim2.new(0, 206, 0, 36)
-label1_4.Font = Enum.Font.Unknown
-label1_4.Text = "Customizes your in-game jump-power to make you jump higher or barely even jump"
-label1_4.TextColor3 = Color3.new(0.701961, 0.701961, 0.701961)
-label1_4.TextSize = 10
-label1_4.TextTransparency = 0.5
-label1_4.TextWrapped = true
-label1_4.TextXAlignment = Enum.TextXAlignment.Left
-
-Frame_2.Parent = ScrollingFrame
-Frame_2.BackgroundColor3 = Color3.new(0.317647, 0.321569, 0.321569)
-Frame_2.BackgroundTransparency = 1
-Frame_2.BorderColor3 = Color3.new(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0, 299, 0, 310)
-Frame_2.Size = UDim2.new(0, 100, 0, -35)
-
-TextBox.Parent = Frame_2
-TextBox.BackgroundColor3 = Color3.new(0.388235, 0.392157, 0.396078)
-TextBox.BackgroundTransparency = 0.30000001192092896
-TextBox.BorderColor3 = Color3.new(0, 0, 0)
-TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(0, 0, 1, 0)
-TextBox.Size = UDim2.new(0, 100, 0, -35)
-TextBox.Font = Enum.Font.JosefinSans
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.new(0.662745, 0.662745, 0.662745)
-TextBox.TextSize = 14
-TextBox.TextWrapped = true
-
-button1.Name = "button1"
-button1.Parent = ScrollingFrame
-button1.BackgroundColor3 = Color3.new(1, 1, 1)
-button1.BorderColor3 = Color3.new(0, 0, 0)
-button1.BorderSizePixel = 0
-button1.Position = UDim2.new(0.149253726, 0, 0.0334728025, 0)
-button1.Size = UDim2.new(0, 34, 0, 33)
-button1.Font = Enum.Font.SourceSans
-button1.Text = ""
-button1.TextColor3 = Color3.new(0, 0, 0)
-button1.TextSize = 14
-
-UICorner_7.Parent = button1
-
-checkmark_3.Name = "checkmark"
-checkmark_3.Parent = button1
-checkmark_3.BackgroundColor3 = Color3.new(1, 1, 1)
-checkmark_3.BackgroundTransparency = 1
-checkmark_3.BorderColor3 = Color3.new(0, 0, 0)
-checkmark_3.BorderSizePixel = 0
-checkmark_3.Position = UDim2.new(0.147, 0, 0.200000003, 0)
-checkmark_3.Size = UDim2.new(0, 24, 0, 22)
-checkmark_3.Visible = false
-checkmark_3.Image = "rbxassetid://10709790644"
-
-Frame_3.Parent = ScrollingFrame
-Frame_3.BackgroundColor3 = Color3.new(0.317647, 0.321569, 0.321569)
-Frame_3.BackgroundTransparency = 1
-Frame_3.BorderColor3 = Color3.new(0, 0, 0)
-Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(0, 299, 0, 369)
-Frame_3.Size = UDim2.new(0, 100, 0, -35)
-
-TextBox_2.Parent = Frame_3
-TextBox_2.BackgroundColor3 = Color3.new(0.388235, 0.392157, 0.396078)
-TextBox_2.BackgroundTransparency = 0.30000001192092896
-TextBox_2.BorderColor3 = Color3.new(0, 0, 0)
-TextBox_2.BorderSizePixel = 0
-TextBox_2.Position = UDim2.new(0, 0, 1, 0)
-TextBox_2.Size = UDim2.new(0, 100, 0, -35)
-TextBox_2.Font = Enum.Font.JosefinSans
-TextBox_2.Text = ""
-TextBox_2.TextColor3 = Color3.new(0.662745, 0.662745, 0.662745)
-TextBox_2.TextSize = 14
-TextBox_2.TextWrapped = true
-
-VisualsElement.Name = "VisualsElement"
-VisualsElement.Parent = UIHolder
-
-Holder.Name = "Holder"
-Holder.Parent = VisualsElement
-Holder.BackgroundColor3 = Color3.new(1, 1, 1)
-Holder.BackgroundTransparency = 1
-Holder.BorderColor3 = Color3.new(0, 0, 0)
-Holder.BorderSizePixel = 0
-Holder.Position = UDim2.new(0.114877589, 0, 0.208904102, 0)
-Holder.Size = UDim2.new(0, 469, 0, 229)
-Holder.Visible = false
-
-cornerbox.Name = "cornerbox"
-cornerbox.Parent = Holder
-cornerbox.BackgroundColor3 = Color3.new(0.266667, 0.270588, 0.270588)
-cornerbox.BackgroundTransparency = 0.30000001192092896
-cornerbox.BorderColor3 = Color3.new(0, 0, 0)
-cornerbox.BorderSizePixel = 0
-cornerbox.Position = UDim2.new(0.0213219617, 0, 0.0043668123, 0)
-cornerbox.Size = UDim2.new(0, 107, 0, 100)
-cornerbox.Font = Enum.Font.Cartoon
-cornerbox.Text = "Corner Box ESP"
-cornerbox.TextColor3 = Color3.new(0.8, 0.8, 0.8)
-cornerbox.TextSize = 14
-cornerbox.TextYAlignment = Enum.TextYAlignment.Top
-
-UICorner_8.Parent = cornerbox
-
-button1_2.Name = "button1"
-button1_2.Parent = cornerbox
-button1_2.BackgroundColor3 = Color3.new(1, 1, 1)
-button1_2.BorderColor3 = Color3.new(0, 0, 0)
-button1_2.BorderSizePixel = 0
-button1_2.Position = UDim2.new(0.373552829, 0, 0.254999995, 0)
-button1_2.Size = UDim2.new(0, 25, 0, 25)
-button1_2.AutoButtonColor = false
-button1_2.Font = Enum.Font.SourceSans
-button1_2.Text = ""
-button1_2.TextColor3 = Color3.new(0, 0, 0)
-button1_2.TextSize = 14
-
-UICorner_9.Parent = button1_2
-
-checkmark_4.Name = "checkmark"
-checkmark_4.Parent = button1_2
-checkmark_4.BackgroundColor3 = Color3.new(1, 1, 1)
-checkmark_4.BackgroundTransparency = 1
-checkmark_4.BorderColor3 = Color3.new(0, 0, 0)
-checkmark_4.BorderSizePixel = 0
-checkmark_4.Position = UDim2.new(0, 0, 0.100000001, 0)
-checkmark_4.Size = UDim2.new(0, 24, 0, 22)
-checkmark_4.Visible = false
-checkmark_4.Image = "rbxassetid://10709790644"
-
-TextLabel.Parent = cornerbox
-TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel.BackgroundTransparency = 1
-TextLabel.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0560000427, 0, 0.579999983, 0)
-TextLabel.Size = UDim2.new(0, 94, 0, 42)
-TextLabel.Font = Enum.Font.JosefinSans
-TextLabel.Text = "Create corners around each player / new player that joins"
-TextLabel.TextColor3 = Color3.new(0.678431, 0.678431, 0.678431)
-TextLabel.TextSize = 10
-TextLabel.TextWrapped = true
-
-skeletonesp.Name = "skeletonesp"
-skeletonesp.Parent = Holder
-skeletonesp.BackgroundColor3 = Color3.new(0.266667, 0.270588, 0.270588)
-skeletonesp.BackgroundTransparency = 0.30000001192092896
-skeletonesp.BorderColor3 = Color3.new(0, 0, 0)
-skeletonesp.BorderSizePixel = 0
-skeletonesp.Position = UDim2.new(0.375, 0, 0.00400000019, 0)
-skeletonesp.Size = UDim2.new(0, 107, 0, 100)
-skeletonesp.Font = Enum.Font.Cartoon
-skeletonesp.Text = "Skeleton ESP"
-skeletonesp.TextColor3 = Color3.new(0.8, 0.8, 0.8)
-skeletonesp.TextSize = 14
-skeletonesp.TextYAlignment = Enum.TextYAlignment.Top
-
-UICorner_10.Parent = skeletonesp
-
-button1_3.Name = "button1"
-button1_3.Parent = skeletonesp
-button1_3.BackgroundColor3 = Color3.new(1, 1, 1)
-button1_3.BorderColor3 = Color3.new(0, 0, 0)
-button1_3.BorderSizePixel = 0
-button1_3.Position = UDim2.new(0.382898629, 0, 0.254999995, 0)
-button1_3.Size = UDim2.new(0, 25, 0, 25)
-button1_3.AutoButtonColor = false
-button1_3.Font = Enum.Font.SourceSans
-button1_3.Text = ""
-button1_3.TextColor3 = Color3.new(0, 0, 0)
-button1_3.TextSize = 14
-
-UICorner_11.Parent = button1_3
-
-checkmark_5.Name = "checkmark"
-checkmark_5.Parent = button1_3
-checkmark_5.BackgroundColor3 = Color3.new(1, 1, 1)
-checkmark_5.BackgroundTransparency = 1
-checkmark_5.BorderColor3 = Color3.new(0, 0, 0)
-checkmark_5.BorderSizePixel = 0
-checkmark_5.Position = UDim2.new(0, 0, 0.100000001, 0)
-checkmark_5.Size = UDim2.new(0, 24, 0, 22)
-checkmark_5.Visible = false
-checkmark_5.Image = "rbxassetid://10709790644"
-
-TextLabel_2.Parent = skeletonesp
-TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_2.BackgroundTransparency = 1
-TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.0560000427, 0, 0.579999983, 0)
-TextLabel_2.Size = UDim2.new(0, 94, 0, 42)
-TextLabel_2.Font = Enum.Font.JosefinSans
-TextLabel_2.Text = "Create skeleton outlines on players "
-TextLabel_2.TextColor3 = Color3.new(0.678431, 0.678431, 0.678431)
-TextLabel_2.TextSize = 10
-TextLabel_2.TextWrapped = true
-
-deityesp.Name = "deityesp"
-deityesp.Parent = Holder
-deityesp.BackgroundColor3 = Color3.new(0.266667, 0.270588, 0.270588)
-deityesp.BackgroundTransparency = 0.30000001192092896
-deityesp.BorderColor3 = Color3.new(0, 0, 0)
-deityesp.BorderSizePixel = 0
-deityesp.Position = UDim2.new(0.744136453, 0, 0.0043668123, 0)
-deityesp.Size = UDim2.new(0, 107, 0, 100)
-deityesp.Font = Enum.Font.Cartoon
-deityesp.Text = "Deity ESP"
-deityesp.TextColor3 = Color3.new(0.8, 0.8, 0.8)
-deityesp.TextSize = 14
-deityesp.TextYAlignment = Enum.TextYAlignment.Top
-
-UICorner_12.Parent = deityesp
-
-button1_4.Name = "button1"
-button1_4.Parent = deityesp
-button1_4.BackgroundColor3 = Color3.new(1, 1, 1)
-button1_4.BorderColor3 = Color3.new(0, 0, 0)
-button1_4.BorderSizePixel = 0
-button1_4.Position = UDim2.new(0.382898629, 0, 0.254999995, 0)
-button1_4.Size = UDim2.new(0, 25, 0, 25)
-button1_4.AutoButtonColor = false
-button1_4.Font = Enum.Font.SourceSans
-button1_4.Text = ""
-button1_4.TextColor3 = Color3.new(0, 0, 0)
-button1_4.TextSize = 14
-
-UICorner_13.Parent = button1_4
-
-checkmark_6.Name = "checkmark"
-checkmark_6.Parent = button1_4
-checkmark_6.BackgroundColor3 = Color3.new(1, 1, 1)
-checkmark_6.BackgroundTransparency = 1
-checkmark_6.BorderColor3 = Color3.new(0, 0, 0)
-checkmark_6.BorderSizePixel = 0
-checkmark_6.Position = UDim2.new(0, 0, 0.100000001, 0)
-checkmark_6.Size = UDim2.new(0, 24, 0, 22)
-checkmark_6.Visible = false
-checkmark_6.Image = "rbxassetid://10709790644"
-
-TextLabel_3.Parent = deityesp
-TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_3.BackgroundTransparency = 1
-TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.0560000427, 0, 0.579999983, 0)
-TextLabel_3.Size = UDim2.new(0, 94, 0, 42)
-TextLabel_3.Font = Enum.Font.JosefinSans
-TextLabel_3.Text = "Create a box around players"
-TextLabel_3.TextColor3 = Color3.new(0.678431, 0.678431, 0.678431)
-TextLabel_3.TextSize = 10
-TextLabel_3.TextWrapped = true
-
-aimlockframe.Name = "aimlockframe"
-aimlockframe.Parent = Holder
-aimlockframe.BackgroundColor3 = Color3.new(0.152941, 0.152941, 0.152941)
-aimlockframe.BorderColor3 = Color3.new(0, 0, 0)
-aimlockframe.BorderSizePixel = 0
-aimlockframe.Position = UDim2.new(0.0362472683, 0, 0.61572051, 0)
-aimlockframe.Size = UDim2.new(0, 431, 0, 44)
-
-UICorner_14.Parent = aimlockframe
-
-TextLabel_4.Parent = aimlockframe
-TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_4.BackgroundTransparency = 1
-TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.0320000015, 0, 0.0900000036, 0)
-TextLabel_4.Size = UDim2.new(0, 113, 0, 15)
-TextLabel_4.Font = Enum.Font.Unknown
-TextLabel_4.Text = "Universal Aimlock"
-TextLabel_4.TextColor3 = Color3.new(0.803922, 0.803922, 0.803922)
-TextLabel_4.TextSize = 14
-
-TextLabel_5.Parent = aimlockframe
-TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_5.BackgroundTransparency = 1
-TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(0.0319999829, 0, 0.430906802, 0)
-TextLabel_5.Size = UDim2.new(0, 113, 0, 25)
-TextLabel_5.Font = Enum.Font.Unknown
-TextLabel_5.Text = "Works in every game"
-TextLabel_5.TextColor3 = Color3.new(0.803922, 0.803922, 0.803922)
-TextLabel_5.TextSize = 10
-
-button1_5.Name = "button1"
-button1_5.Parent = aimlockframe
-button1_5.BackgroundColor3 = Color3.new(1, 1, 1)
-button1_5.BorderColor3 = Color3.new(0, 0, 0)
-button1_5.BorderSizePixel = 0
-button1_5.Position = UDim2.new(0.907260537, 0, 0.209545478, 0)
-button1_5.Size = UDim2.new(0, 25, 0, 25)
-button1_5.AutoButtonColor = false
-button1_5.Font = Enum.Font.SourceSans
-button1_5.Text = ""
-button1_5.TextColor3 = Color3.new(0, 0, 0)
-button1_5.TextSize = 14
-
-UICorner_15.Parent = button1_5
-
-checkmark_7.Name = "checkmark"
-checkmark_7.Parent = button1_5
-checkmark_7.BackgroundColor3 = Color3.new(1, 1, 1)
-checkmark_7.BackgroundTransparency = 1
-checkmark_7.BorderColor3 = Color3.new(0, 0, 0)
-checkmark_7.BorderSizePixel = 0
-checkmark_7.Position = UDim2.new(0, 0, 0.100000001, 0)
-checkmark_7.Size = UDim2.new(0, 24, 0, 22)
-checkmark_7.Visible = false
-checkmark_7.Image = "rbxassetid://10709790644"
-
-notification.Name = "notification"
-notification.Parent = Holder
-notification.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
-notification.BorderColor3 = Color3.new(0, 0, 0)
-notification.BorderSizePixel = 0
-notification.Position = UDim2.new(-0.130063966, 0, 1.10917032, 0)
-notification.Size = UDim2.new(0, 531, 0, 54)
-notification.Visible = false
-
-UICorner_16.Parent = notification
-
-DropShadowHolder_2.Name = "DropShadowHolder"
-DropShadowHolder_2.Parent = notification
-DropShadowHolder_2.BackgroundTransparency = 1
-DropShadowHolder_2.BorderSizePixel = 0
-DropShadowHolder_2.Size = UDim2.new(1, 0, 1, 0)
-DropShadowHolder_2.ZIndex = 0
-
-DropShadow_2.Name = "DropShadow"
-DropShadow_2.Parent = DropShadowHolder_2
-DropShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
-DropShadow_2.BackgroundTransparency = 1
-DropShadow_2.BorderSizePixel = 0
-DropShadow_2.Position = UDim2.new(0.5, 0, 0.5, 0)
-DropShadow_2.Size = UDim2.new(1, 47, 1, 47)
-DropShadow_2.ZIndex = 0
-DropShadow_2.Image = "rbxassetid://6014261993"
-DropShadow_2.ImageColor3 = Color3.new(0, 0, 0)
-DropShadow_2.ImageTransparency = 0.5
-DropShadow_2.ScaleType = Enum.ScaleType.Slice
-DropShadow_2.SliceCenter = Rect.new(49, 49, 450, 450)
-
-TextLabel_6.Parent = notification
-TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_6.BackgroundTransparency = 1
-TextLabel_6.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(0.31099999, 0, 0.0500000007, 0)
-TextLabel_6.Size = UDim2.new(0, 200, 0, 17)
-TextLabel_6.Font = Enum.Font.Unknown
-TextLabel_6.Text = "Successfully started Aimlock!"
-TextLabel_6.TextColor3 = Color3.new(1, 1, 1)
-TextLabel_6.TextSize = 20
-
-TextLabel_7.Parent = notification
-TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_7.BackgroundTransparency = 1
-TextLabel_7.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0.262035757, 0, 0.364815027, 0)
-TextLabel_7.Size = UDim2.new(0, 251, 0, 34)
-TextLabel_7.Font = Enum.Font.Unknown
-TextLabel_7.Text = "To use the aimlock, hold your right mouse button or right click."
-TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
-TextLabel_7.TextSize = 15
-
-TextLabel_8.Parent = Holder
-TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_8.BackgroundTransparency = 1
-TextLabel_8.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Position = UDim2.new(0.285714298, 0, 0.903930128, 0)
-TextLabel_8.Size = UDim2.new(0, 200, 0, 15)
-TextLabel_8.Font = Enum.Font.JosefinSans
-TextLabel_8.Text = "We recommend to only use 1 ESP as using all 3 can cause your FPS to become horrible."
-TextLabel_8.TextColor3 = Color3.new(0.796079, 0.796079, 0.796079)
-TextLabel_8.TextSize = 11
-
-UILogo.Name = "UILogo"
-UILogo.Parent = UIHolder
-UILogo.BackgroundColor3 = Color3.new(1, 1, 1)
-UILogo.BackgroundTransparency = 1
-UILogo.BorderColor3 = Color3.new(0, 0, 0)
-UILogo.BorderSizePixel = 0
-UILogo.Position = UDim2.new(0.011299435, 0, 0.0239726026, 0)
-UILogo.Size = UDim2.new(0, 48, 0, 44)
-UILogo.Image = "http://www.roblox.com/asset/?id=17140623647"
-
-Audios.Name = "Audios"
-Audios.Parent = UIHolder
-
-HomeElement.Name = "HomeElement"
-HomeElement.Parent = UIHolder
-
-Frame_4.Parent = HomeElement
-Frame_4.BackgroundColor3 = Color3.new(1, 1, 1)
-Frame_4.BackgroundTransparency = 1
-Frame_4.BorderColor3 = Color3.new(0, 0, 0)
-Frame_4.BorderSizePixel = 0
-Frame_4.Position = UDim2.new(0.114877589, 0, 0.174657539, 0)
-Frame_4.Size = UDim2.new(0, 469, 0, 239)
-
-plrembed.Name = "plrembed"
-plrembed.Parent = Frame_4
-plrembed.BackgroundColor3 = Color3.new(0.411765, 0.415686, 0.415686)
-plrembed.BackgroundTransparency = 0.800000011920929
-plrembed.BorderColor3 = Color3.new(0, 0, 0)
-plrembed.BorderSizePixel = 0
-plrembed.Position = UDim2.new(0.412602067, 0, 0.0714090914, 0)
-plrembed.Size = UDim2.new(0, 76, 0, 75)
-plrembed.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-UICorner_17.Parent = plrembed
-UICorner_17.CornerRadius = UDim.new(1, 0)
-
-gamedetection.Name = "gamedetection"
-gamedetection.Parent = Frame_4
-gamedetection.BackgroundColor3 = Color3.new(1, 1, 1)
-gamedetection.BackgroundTransparency = 1
-gamedetection.BorderColor3 = Color3.new(0, 0, 0)
-gamedetection.BorderSizePixel = 0
-gamedetection.Position = UDim2.new(0.0169370603, 0, 0.698257506, 0)
-gamedetection.Size = UDim2.new(0, 209, 0, 39)
-gamedetection.Font = Enum.Font.SourceSansBold
-gamedetection.Text = "Game:"
-gamedetection.TextColor3 = Color3.new(0.835294, 0.835294, 0.835294)
-gamedetection.TextSize = 20
-gamedetection.TextWrapped = true
-gamedetection.TextXAlignment = Enum.TextXAlignment.Left
-
-detection.Name = "detection"
-detection.Parent = Frame_4
-detection.BackgroundColor3 = Color3.new(1, 1, 1)
-detection.BackgroundTransparency = 1
-detection.BorderColor3 = Color3.new(0, 0, 0)
-detection.BorderSizePixel = 0
-detection.Position = UDim2.new(0.0169370603, 0, 0.831432402, 0)
-detection.Size = UDim2.new(0, 209, 0, 30)
-detection.Font = Enum.Font.SourceSansBold
-detection.Text = "Status: Undetected"
-detection.TextColor3 = Color3.new(0.835294, 0.835294, 0.835294)
-detection.TextSize = 20
-detection.TextWrapped = true
-detection.TextXAlignment = Enum.TextXAlignment.Left
-
-plrtitle.Name = "plrtitle"
-plrtitle.Parent = Frame_4
-plrtitle.BackgroundColor3 = Color3.new(1, 1, 1)
-plrtitle.BackgroundTransparency = 1
-plrtitle.BorderColor3 = Color3.new(0, 0, 0)
-plrtitle.BorderSizePixel = 0
-plrtitle.Position = UDim2.new(0.150863945, 0, 0.382651746, 0)
-plrtitle.Size = UDim2.new(0, 321, 0, 55)
-plrtitle.Font = Enum.Font.Cartoon
-plrtitle.Text = "nil"
-plrtitle.TextColor3 = Color3.new(1, 1, 1)
-plrtitle.TextSize = 25
-plrtitle.TextWrapped = true
-
-credits.Name = "credits"
-credits.Parent = Frame_4
-credits.BackgroundColor3 = Color3.new(1, 1, 1)
-credits.BackgroundTransparency = 1
-credits.BorderColor3 = Color3.new(0, 0, 0)
-credits.BorderSizePixel = 0
-credits.Position = UDim2.new(0.83783257, 0, 0.926778257, 0)
-credits.Size = UDim2.new(0, 77, 0, 17)
-credits.Font = Enum.Font.SourceSansBold
-credits.Text = "Made by Mars"
-credits.TextColor3 = Color3.new(0.835294, 0.835294, 0.835294)
-credits.TextSize = 15
-credits.TextWrapped = true
-credits.TextXAlignment = Enum.TextXAlignment.Left
-
-ScriptElement.Name = "ScriptElement"
-ScriptElement.Parent = UIHolder
-
-ScriptsHolder.Name = "ScriptsHolder"
-ScriptsHolder.Parent = ScriptElement
-ScriptsHolder.BackgroundColor3 = Color3.new(1, 1, 1)
-ScriptsHolder.BackgroundTransparency = 1
-ScriptsHolder.BorderColor3 = Color3.new(0, 0, 0)
-ScriptsHolder.BorderSizePixel = 0
-ScriptsHolder.Position = UDim2.new(0.114877589, 0, 0.174657539, 0)
-ScriptsHolder.Size = UDim2.new(0, 467, 0, 239)
-ScriptsHolder.Visible = false
-
-script1.Name = "script1"
-script1.Parent = ScriptsHolder
-script1.BackgroundColor3 = Color3.new(0.396078, 0.4, 0.4)
-script1.BackgroundTransparency = 0.5
-script1.BorderColor3 = Color3.new(0, 0, 0)
-script1.BorderSizePixel = 0
-script1.Position = UDim2.new(0.0364025682, 0, 0.0376569033, 0)
-script1.Size = UDim2.new(0, 435, 0, 28)
-script1.Font = Enum.Font.Unknown
-script1.Text = ""
-script1.TextColor3 = Color3.new(0.815686, 0.815686, 0.815686)
-script1.TextSize = 14
-script1.TextXAlignment = Enum.TextXAlignment.Left
-script1.TextYAlignment = Enum.TextYAlignment.Bottom
-
-UICorner_18.Parent = script1
-
-TextLabel_9.Parent = script1
-TextLabel_9.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_9.BackgroundTransparency = 1
-TextLabel_9.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(0, 0, 0.142857149, 0)
-TextLabel_9.Size = UDim2.new(0, 101, 0, 19)
-TextLabel_9.Font = Enum.Font.Unknown
-TextLabel_9.Text = "Auto Parry"
-TextLabel_9.TextColor3 = Color3.new(0.807843, 0.807843, 0.807843)
-TextLabel_9.TextSize = 14
-
-TextLabel_10.Parent = script1
-TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_10.BackgroundTransparency = 1
-TextLabel_10.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_10.BorderSizePixel = 0
-TextLabel_10.Position = UDim2.new(0.788505733, 0, 0.142857149, 0)
-TextLabel_10.Size = UDim2.new(0, 101, 0, 19)
-TextLabel_10.Font = Enum.Font.Unknown
-TextLabel_10.Text = "100% WinRate"
-TextLabel_10.TextColor3 = Color3.new(0.807843, 0.807843, 0.807843)
-TextLabel_10.TextSize = 10
-
-Frame_5.Parent = ScriptsHolder
-Frame_5.BackgroundColor3 = Color3.new(0.286275, 0.290196, 0.290196)
-Frame_5.BorderColor3 = Color3.new(0, 0, 0)
-Frame_5.BorderSizePixel = 0
-Frame_5.Position = UDim2.new(0.0385438986, 0, 0.230125517, 0)
-Frame_5.Size = UDim2.new(0, 100, 0, 100)
-
-UICorner_19.Parent = Frame_5
-
-TextLabel_11.Parent = Frame_5
-TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_11.BackgroundTransparency = 1
-TextLabel_11.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_11.BorderSizePixel = 0
-TextLabel_11.Position = UDim2.new(-0.0199999996, 0, 0.00499999989, 0)
-TextLabel_11.Size = UDim2.new(0, 104, 0, 19)
-TextLabel_11.Font = Enum.Font.Unknown
-TextLabel_11.Text = "Follow Ball"
-TextLabel_11.TextColor3 = Color3.new(0.85098, 0.85098, 0.85098)
-TextLabel_11.TextSize = 17
-
-TextLabel_12.Parent = Frame_5
-TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_12.BackgroundTransparency = 1
-TextLabel_12.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_12.BorderSizePixel = 0
-TextLabel_12.Position = UDim2.new(-0.00999999978, 0, 0.564999998, 0)
-TextLabel_12.Size = UDim2.new(0, 104, 0, 43)
-TextLabel_12.Font = Enum.Font.Unknown
-TextLabel_12.Text = "Makes your camera follow the ball (Toggable)"
-TextLabel_12.TextColor3 = Color3.new(0.85098, 0.85098, 0.85098)
-TextLabel_12.TextSize = 14
-TextLabel_12.TextWrapped = true
-
-button1_6.Name = "button1"
-button1_6.Parent = Frame_5
-button1_6.BackgroundColor3 = Color3.new(1, 1, 1)
-button1_6.BorderColor3 = Color3.new(0, 0, 0)
-button1_6.BorderSizePixel = 0
-button1_6.Position = UDim2.new(0.319253832, 0, 0.23347275, 0)
-button1_6.Size = UDim2.new(0, 34, 0, 33)
-button1_6.Font = Enum.Font.SourceSans
-button1_6.Text = ""
-button1_6.TextColor3 = Color3.new(0, 0, 0)
-button1_6.TextSize = 14
-
-UICorner_20.Parent = button1_6
-
-checkmark_8.Name = "checkmark"
-checkmark_8.Parent = button1_6
-checkmark_8.BackgroundColor3 = Color3.new(1, 1, 1)
-checkmark_8.BackgroundTransparency = 1
-checkmark_8.BorderColor3 = Color3.new(0, 0, 0)
-checkmark_8.BorderSizePixel = 0
-checkmark_8.Position = UDim2.new(0.147, 0, 0.200000003, 0)
-checkmark_8.Size = UDim2.new(0, 24, 0, 22)
-checkmark_8.Visible = false
-checkmark_8.Image = "rbxassetid://10709790644"
-
-notification_2.Name = "notification"
-notification_2.Parent = ScriptsHolder
-notification_2.BackgroundColor3 = Color3.new(0.231373, 0.235294, 0.235294)
-notification_2.BackgroundTransparency = 0.30000001192092896
-notification_2.BorderColor3 = Color3.new(0, 0, 0)
-notification_2.BorderSizePixel = 0
-notification_2.Position = UDim2.new(-0.130620986, 0, 1.06694555, 0)
-notification_2.Size = UDim2.new(0, 531, 0, 33)
-notification_2.Visible = false
-
-DropShadowHolder_3.Name = "DropShadowHolder"
-DropShadowHolder_3.Parent = notification_2
-DropShadowHolder_3.BackgroundTransparency = 1
-DropShadowHolder_3.BorderSizePixel = 0
-DropShadowHolder_3.Size = UDim2.new(1, 0, 1, 0)
-DropShadowHolder_3.ZIndex = 0
-
-DropShadow_3.Name = "DropShadow"
-DropShadow_3.Parent = DropShadowHolder_3
-DropShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
-DropShadow_3.BackgroundTransparency = 1
-DropShadow_3.BorderSizePixel = 0
-DropShadow_3.Position = UDim2.new(0.5, 0, 0.5, 0)
-DropShadow_3.Size = UDim2.new(1, 47, 1, 47)
-DropShadow_3.ZIndex = 0
-DropShadow_3.Image = "rbxassetid://6014261993"
-DropShadow_3.ImageColor3 = Color3.new(0, 0, 0)
-DropShadow_3.ImageTransparency = 0.5
-DropShadow_3.ScaleType = Enum.ScaleType.Slice
-DropShadow_3.SliceCenter = Rect.new(49, 49, 450, 450)
-
-UICorner_21.Parent = notification_2
-
-TextLabel_13.Parent = notification_2
-TextLabel_13.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_13.BackgroundTransparency = 1
-TextLabel_13.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_13.BorderSizePixel = 0
-TextLabel_13.Position = UDim2.new(0.372881353, 0, 0, 0)
-TextLabel_13.Size = UDim2.new(0, 135, 0, 10)
-TextLabel_13.Font = Enum.Font.Unknown
-TextLabel_13.Text = "Successfully executed Follow Ball Script!"
-TextLabel_13.TextColor3 = Color3.new(0.882353, 0.882353, 0.882353)
-TextLabel_13.TextSize = 14
-
-TextLabel_14.Parent = notification_2
-TextLabel_14.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel_14.BackgroundTransparency = 1
-TextLabel_14.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Position = UDim2.new(0.372999996, 0, 0.5, 0)
-TextLabel_14.Size = UDim2.new(0, 135, 0, 10)
-TextLabel_14.Font = Enum.Font.Unknown
-TextLabel_14.Text = "To use it, click P to toggle it on and click L to toggle it off."
-TextLabel_14.TextColor3 = Color3.new(0.882353, 0.882353, 0.882353)
-TextLabel_14.TextSize = 12
-
--- Scripts
-
-local function DQYK_fake_script() -- Home.LocalScript 
-	local script = Instance.new('LocalScript', Home)
-
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 133 | Scripts: 21 | Modules: 0
+local G2L = {};
+
+-- StarterGui.MarsHubUI
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[MarsHubUI]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.MarsHubUI.UIHolder
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
+G2L["2"]["Size"] = UDim2.new(0, 531, 0, 292);
+G2L["2"]["Position"] = UDim2.new(0.23831, 0, 0.10127, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[UIHolder]];
+
+-- StarterGui.MarsHubUI.UIHolder.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.MainFrame
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(28, 28, 28);
+G2L["4"]["Size"] = UDim2.new(0, 468, 0, 239);
+G2L["4"]["Position"] = UDim2.new(0.11488, 0, 0.17466, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Name"] = [[MainFrame]];
+
+-- StarterGui.MarsHubUI.UIHolder.MainFrame.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.UITitle
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextSize"] = 25;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0, 156, 0, 23);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Mars Hub]];
+G2L["6"]["Name"] = [[UITitle]];
+G2L["6"]["Position"] = UDim2.new(0.387, 0, 0.05, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.UITitle.UIGradient
+G2L["7"] = Instance.new("UIGradient", G2L["6"]);
+G2L["7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.347, Color3.fromRGB(101, 101, 101)),ColorSequenceKeypoint.new(0.387, Color3.fromRGB(253, 253, 253)),ColorSequenceKeypoint.new(0.788, Color3.fromRGB(66, 66, 66)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(15, 15, 15)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder
+G2L["8"] = Instance.new("Frame", G2L["2"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["Size"] = UDim2.new(0, 50, 0, 225);
+G2L["8"]["Position"] = UDim2.new(0.00942, 0, 0.20205, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Name"] = [[ButtonHolder]];
+G2L["8"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Home
+G2L["9"] = Instance.new("ImageButton", G2L["8"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["ScaleType"] = Enum.ScaleType.Fit;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Image"] = [[rbxassetid://10723407389]];
+G2L["9"]["Size"] = UDim2.new(0, 37, 0, 38);
+G2L["9"]["BackgroundTransparency"] = 1;
+G2L["9"]["Name"] = [[Home]];
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Position"] = UDim2.new(0.12, 0, 0.05333, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Home.LocalScript
+G2L["a"] = Instance.new("LocalScript", G2L["9"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Scripts
+G2L["b"] = Instance.new("ImageButton", G2L["8"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Image"] = [[rbxassetid://10734943448]];
+G2L["b"]["Size"] = UDim2.new(0, 37, 0, 38);
+G2L["b"]["BackgroundTransparency"] = 1;
+G2L["b"]["Name"] = [[Scripts]];
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Position"] = UDim2.new(0.12, 0, 0.30222, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Scripts.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Visuals
+G2L["d"] = Instance.new("ImageButton", G2L["8"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["Image"] = [[rbxassetid://10734906975]];
+G2L["d"]["Size"] = UDim2.new(0, 37, 0, 38);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Name"] = [[Visuals]];
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Position"] = UDim2.new(0.12, 0, 0.80444, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Visuals.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.UIListLayout
+G2L["f"] = Instance.new("UIListLayout", G2L["8"]);
+G2L["f"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+G2L["f"]["Padding"] = UDim.new(0, 18);
+G2L["f"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+G2L["f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Settings
+G2L["10"] = Instance.new("ImageButton", G2L["8"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Image"] = [[rbxassetid://10734950309]];
+G2L["10"]["Size"] = UDim2.new(0, 37, 0, 38);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Name"] = [[Settings]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Position"] = UDim2.new(0.12, 0, 0.55111, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Settings.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.DropShadowHolder
+G2L["12"] = Instance.new("Frame", G2L["2"]);
+G2L["12"]["ZIndex"] = 0;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["12"]["Name"] = [[DropShadowHolder]];
+G2L["12"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.DropShadowHolder.DropShadow
+G2L["13"] = Instance.new("ImageLabel", G2L["12"]);
+G2L["13"]["ZIndex"] = 0;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+G2L["13"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["13"]["ImageTransparency"] = 0.5;
+G2L["13"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["13"]["Image"] = [[rbxassetid://6014261993]];
+G2L["13"]["Size"] = UDim2.new(1, 47, 1, 47);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Name"] = [[DropShadow]];
+G2L["13"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement
+G2L["14"] = Instance.new("Folder", G2L["2"]);
+G2L["14"]["Name"] = [[SettingElement]];
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame
+G2L["15"] = Instance.new("ScrollingFrame", G2L["14"]);
+G2L["15"]["Visible"] = false;
+G2L["15"]["Active"] = true;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Size"] = UDim2.new(0, 469, 0, 239);
+G2L["15"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Position"] = UDim2.new(0.11676, 0, 0.17466, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["ScrollBarThickness"] = 7;
+G2L["15"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel1
+G2L["16"] = Instance.new("TextLabel", G2L["15"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["TextSize"] = 17;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Size"] = UDim2.new(0, 200, 0, 30);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Disable In-Game Shadows]];
+G2L["16"]["Name"] = [[textlabel1]];
+G2L["16"]["Position"] = UDim2.new(0.284, 0, 0.035, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel1.label1
+G2L["17"] = Instance.new("TextLabel", G2L["16"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["17"]["TextTransparency"] = 0.5;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["TextSize"] = 10;
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["17"]["BackgroundTransparency"] = 1;
+G2L["17"]["Size"] = UDim2.new(0, 206, 0, 23);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Removes all shadows inside the game that can cause lag / lose fps]];
+G2L["17"]["Name"] = [[label1]];
+G2L["17"]["Position"] = UDim2.new(0.07624, 0, 0.76667, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button2
+G2L["18"] = Instance.new("TextButton", G2L["15"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["Size"] = UDim2.new(0, 34, 0, 33);
+G2L["18"]["Name"] = [[button2]];
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[]];
+G2L["18"]["Position"] = UDim2.new(0.14925, 0, 0.13808, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button2.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["18"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button2.checkmark
+G2L["1a"] = Instance.new("ImageLabel", G2L["18"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["Image"] = [[rbxassetid://10709790644]];
+G2L["1a"]["Size"] = UDim2.new(0, 24, 0, 22);
+G2L["1a"]["Visible"] = false;
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Name"] = [[checkmark]];
+G2L["1a"]["Position"] = UDim2.new(0.147, 0, 0.2, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button2.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["18"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel2
+G2L["1c"] = Instance.new("TextLabel", G2L["15"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["TextSize"] = 17;
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 30);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Boost FPS]];
+G2L["1c"]["Name"] = [[textlabel2]];
+G2L["1c"]["Position"] = UDim2.new(0.284, 0, 0.14, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel2.label2
+G2L["1d"] = Instance.new("TextLabel", G2L["1c"]);
+G2L["1d"]["TextWrapped"] = true;
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1d"]["TextTransparency"] = 0.5;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1d"]["TextSize"] = 10;
+G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["1d"]["BackgroundTransparency"] = 1;
+G2L["1d"]["Size"] = UDim2.new(0, 206, 0, 23);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Text"] = [[Boost your FPS to make your game more smoother and way faster]];
+G2L["1d"]["Name"] = [[label2]];
+G2L["1d"]["Position"] = UDim2.new(0.04124, 0, 0.76667, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button3
+G2L["1e"] = Instance.new("TextButton", G2L["15"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["Size"] = UDim2.new(0, 34, 0, 33);
+G2L["1e"]["Name"] = [[button3]];
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[]];
+G2L["1e"]["Position"] = UDim2.new(0.149, 0, 0.245, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button3.UICorner
+G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button3.checkmark
+G2L["20"] = Instance.new("ImageLabel", G2L["1e"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["Image"] = [[rbxassetid://10709790644]];
+G2L["20"]["Size"] = UDim2.new(0, 24, 0, 22);
+G2L["20"]["Visible"] = false;
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Name"] = [[checkmark]];
+G2L["20"]["Position"] = UDim2.new(0.147, 0, 0.2, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button3.LocalScript
+G2L["21"] = Instance.new("LocalScript", G2L["1e"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel3
+G2L["22"] = Instance.new("TextLabel", G2L["15"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["TextSize"] = 17;
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["Size"] = UDim2.new(0, 200, 0, 30);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[Remove SFX]];
+G2L["22"]["Name"] = [[textlabel3]];
+G2L["22"]["Position"] = UDim2.new(0.284, 0, 0.245, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel3.label3
+G2L["23"] = Instance.new("TextLabel", G2L["22"]);
+G2L["23"]["TextWrapped"] = true;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["23"]["TextTransparency"] = 0.5;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["TextSize"] = 10;
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["23"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["23"]["BackgroundTransparency"] = 1;
+G2L["23"]["Size"] = UDim2.new(0, 206, 0, 23);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["Text"] = [[Finds all the sounds in the game and turns them off]];
+G2L["23"]["Name"] = [[label3]];
+G2L["23"]["Position"] = UDim2.new(0.04124, 0, 0.76667, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame
+G2L["24"] = Instance.new("Frame", G2L["15"]);
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(79, 80, 80);
+G2L["24"]["Size"] = UDim2.new(0, 154, 0, 23);
+G2L["24"]["Position"] = UDim2.new(0.55864, 0, 0.36943, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["BackgroundTransparency"] = 0.3;
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextButton
+G2L["25"] = Instance.new("TextButton", G2L["24"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(0, 24, 0, 25);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[]];
+G2L["25"]["Position"] = UDim2.new(-0.05, 0, -0.043, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextButton.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextButton.LocalScript
+G2L["27"] = Instance.new("LocalScript", G2L["25"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.LocalScript
+G2L["28"] = Instance.new("LocalScript", G2L["24"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.UICorner
+G2L["29"] = Instance.new("UICorner", G2L["24"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel4
+G2L["2a"] = Instance.new("TextLabel", G2L["15"]);
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["TextSize"] = 13;
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2a"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["2a"]["Size"] = UDim2.new(0, 200, 0, 30);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[Customize FOV]];
+G2L["2a"]["Name"] = [[textlabel4]];
+G2L["2a"]["Position"] = UDim2.new(0, 29, 0, 203);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel4.label1
+G2L["2b"] = Instance.new("TextLabel", G2L["2a"]);
+G2L["2b"]["TextWrapped"] = true;
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2b"]["TextTransparency"] = 0.5;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["TextSize"] = 10;
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2b"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["2b"]["BackgroundTransparency"] = 1;
+G2L["2b"]["Size"] = UDim2.new(0, 206, 0, 23);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[Customizes your in-game Field of View to give you a bigger view of the game]];
+G2L["2b"]["Name"] = [[label1]];
+G2L["2b"]["Position"] = UDim2.new(-0.06376, 0, 0.66667, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel5
+G2L["2c"] = Instance.new("TextLabel", G2L["15"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["TextSize"] = 13;
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2c"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["Size"] = UDim2.new(0, 200, 0, 30);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Text"] = [[Customize Speed]];
+G2L["2c"]["Name"] = [[textlabel5]];
+G2L["2c"]["Position"] = UDim2.new(0, 29, 0, 264);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel5.label1
+G2L["2d"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2d"]["TextTransparency"] = 0.5;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["TextSize"] = 10;
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2d"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["2d"]["BackgroundTransparency"] = 1;
+G2L["2d"]["Size"] = UDim2.new(0, 206, 0, 23);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Text"] = [[Customizes your in-game walkspeed to either make you go faster or slower]];
+G2L["2d"]["Name"] = [[label1]];
+G2L["2d"]["Position"] = UDim2.new(-0.06376, 0, 0.66667, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel6
+G2L["2e"] = Instance.new("TextLabel", G2L["15"]);
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["TextSize"] = 13;
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2e"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["2e"]["BackgroundTransparency"] = 1;
+G2L["2e"]["Size"] = UDim2.new(0, 200, 0, 30);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Customize Jump]];
+G2L["2e"]["Name"] = [[textlabel6]];
+G2L["2e"]["Position"] = UDim2.new(0, 29, 0, 320);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.textlabel6.label1
+G2L["2f"] = Instance.new("TextLabel", G2L["2e"]);
+G2L["2f"]["TextWrapped"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2f"]["TextTransparency"] = 0.5;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["TextSize"] = 10;
+G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2f"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["2f"]["BackgroundTransparency"] = 1;
+G2L["2f"]["Size"] = UDim2.new(0, 206, 0, 36);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["Text"] = [[Customizes your in-game jump-power to make you jump higher or barely even jump]];
+G2L["2f"]["Name"] = [[label1]];
+G2L["2f"]["Position"] = UDim2.new(-0.06376, 0, 0.66667, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame
+G2L["30"] = Instance.new("Frame", G2L["15"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(82, 83, 83);
+G2L["30"]["Size"] = UDim2.new(0, 100, 0, -35);
+G2L["30"]["Position"] = UDim2.new(0, 299, 0, 310);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextBox
+G2L["31"] = Instance.new("TextBox", G2L["30"]);
+G2L["31"]["TextColor3"] = Color3.fromRGB(170, 170, 170);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextWrapped"] = true;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(100, 101, 102);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["Size"] = UDim2.new(0, 100, 0, -35);
+G2L["31"]["Position"] = UDim2.new(0, 0, 1, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[]];
+G2L["31"]["BackgroundTransparency"] = 0.3;
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextBox.LocalScript
+G2L["32"] = Instance.new("LocalScript", G2L["31"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button1
+G2L["33"] = Instance.new("TextButton", G2L["15"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["TextSize"] = 14;
+G2L["33"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["33"]["Size"] = UDim2.new(0, 34, 0, 33);
+G2L["33"]["Name"] = [[button1]];
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Text"] = [[]];
+G2L["33"]["Position"] = UDim2.new(0.14925, 0, 0.03347, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button1.UICorner
+G2L["34"] = Instance.new("UICorner", G2L["33"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button1.LocalScript
+G2L["35"] = Instance.new("LocalScript", G2L["33"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button1.checkmark
+G2L["36"] = Instance.new("ImageLabel", G2L["33"]);
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["Image"] = [[rbxassetid://10709790644]];
+G2L["36"]["Size"] = UDim2.new(0, 24, 0, 22);
+G2L["36"]["Visible"] = false;
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["BackgroundTransparency"] = 1;
+G2L["36"]["Name"] = [[checkmark]];
+G2L["36"]["Position"] = UDim2.new(0.147, 0, 0.2, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame
+G2L["37"] = Instance.new("Frame", G2L["15"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(82, 83, 83);
+G2L["37"]["Size"] = UDim2.new(0, 100, 0, -35);
+G2L["37"]["Position"] = UDim2.new(0, 299, 0, 369);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextBox
+G2L["38"] = Instance.new("TextBox", G2L["37"]);
+G2L["38"]["TextColor3"] = Color3.fromRGB(170, 170, 170);
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["TextWrapped"] = true;
+G2L["38"]["TextSize"] = 14;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(100, 101, 102);
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38"]["Size"] = UDim2.new(0, 100, 0, -35);
+G2L["38"]["Position"] = UDim2.new(0, 0, 1, 0);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[]];
+G2L["38"]["BackgroundTransparency"] = 0.3;
+
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextBox.LocalScript
+G2L["39"] = Instance.new("LocalScript", G2L["38"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement
+G2L["3a"] = Instance.new("Folder", G2L["2"]);
+G2L["3a"]["Name"] = [[VisualsElement]];
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder
+G2L["3b"] = Instance.new("Frame", G2L["3a"]);
+G2L["3b"]["Visible"] = false;
+G2L["3b"]["BorderSizePixel"] = 0;
+G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3b"]["Size"] = UDim2.new(0, 469, 0, 229);
+G2L["3b"]["Position"] = UDim2.new(0.11488, 0, 0.2089, 0);
+G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3b"]["Name"] = [[Holder]];
+G2L["3b"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.cornerbox
+G2L["3c"] = Instance.new("TextLabel", G2L["3b"]);
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(69, 70, 70);
+G2L["3c"]["TextSize"] = 14;
+G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3c"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["3c"]["BackgroundTransparency"] = 0.3;
+G2L["3c"]["Size"] = UDim2.new(0, 107, 0, 100);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Text"] = [[Corner Box ESP]];
+G2L["3c"]["Name"] = [[cornerbox]];
+G2L["3c"]["Position"] = UDim2.new(0.02132, 0, 0.00437, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.cornerbox.UICorner
+G2L["3d"] = Instance.new("UICorner", G2L["3c"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.cornerbox.button1
+G2L["3e"] = Instance.new("TextButton", G2L["3c"]);
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["AutoButtonColor"] = false;
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3e"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["3e"]["Name"] = [[button1]];
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Text"] = [[]];
+G2L["3e"]["Position"] = UDim2.new(0.37355, 0, 0.255, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.cornerbox.button1.UICorner
+G2L["3f"] = Instance.new("UICorner", G2L["3e"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.cornerbox.button1.LocalScript
+G2L["40"] = Instance.new("LocalScript", G2L["3e"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.cornerbox.button1.checkmark
+G2L["41"] = Instance.new("ImageLabel", G2L["3e"]);
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["Image"] = [[rbxassetid://10709790644]];
+G2L["41"]["Size"] = UDim2.new(0, 24, 0, 22);
+G2L["41"]["Visible"] = false;
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["BackgroundTransparency"] = 1;
+G2L["41"]["Name"] = [[checkmark]];
+G2L["41"]["Position"] = UDim2.new(0, 0, 0.1, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.cornerbox.TextLabel
+G2L["42"] = Instance.new("TextLabel", G2L["3c"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["TextSize"] = 10;
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["42"]["TextColor3"] = Color3.fromRGB(174, 174, 174);
+G2L["42"]["BackgroundTransparency"] = 1;
+G2L["42"]["Size"] = UDim2.new(0, 94, 0, 42);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[Create corners around each player / new player that joins]];
+G2L["42"]["Position"] = UDim2.new(0.056, 0, 0.58, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.skeletonesp
+G2L["43"] = Instance.new("TextLabel", G2L["3b"]);
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(69, 70, 70);
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["43"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["43"]["BackgroundTransparency"] = 0.3;
+G2L["43"]["Size"] = UDim2.new(0, 107, 0, 100);
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Text"] = [[Skeleton ESP]];
+G2L["43"]["Name"] = [[skeletonesp]];
+G2L["43"]["Position"] = UDim2.new(0.375, 0, 0.004, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.skeletonesp.UICorner
+G2L["44"] = Instance.new("UICorner", G2L["43"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.skeletonesp.button1
+G2L["45"] = Instance.new("TextButton", G2L["43"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["AutoButtonColor"] = false;
+G2L["45"]["TextSize"] = 14;
+G2L["45"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["45"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["45"]["Name"] = [[button1]];
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[]];
+G2L["45"]["Position"] = UDim2.new(0.3829, 0, 0.255, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.skeletonesp.button1.UICorner
+G2L["46"] = Instance.new("UICorner", G2L["45"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.skeletonesp.button1.LocalScript
+G2L["47"] = Instance.new("LocalScript", G2L["45"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.skeletonesp.button1.checkmark
+G2L["48"] = Instance.new("ImageLabel", G2L["45"]);
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["Image"] = [[rbxassetid://10709790644]];
+G2L["48"]["Size"] = UDim2.new(0, 24, 0, 22);
+G2L["48"]["Visible"] = false;
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["BackgroundTransparency"] = 1;
+G2L["48"]["Name"] = [[checkmark]];
+G2L["48"]["Position"] = UDim2.new(0, 0, 0.1, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.skeletonesp.TextLabel
+G2L["49"] = Instance.new("TextLabel", G2L["43"]);
+G2L["49"]["TextWrapped"] = true;
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["49"]["TextSize"] = 10;
+G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["49"]["TextColor3"] = Color3.fromRGB(174, 174, 174);
+G2L["49"]["BackgroundTransparency"] = 1;
+G2L["49"]["Size"] = UDim2.new(0, 94, 0, 42);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Text"] = [[Create skeleton outlines on players ]];
+G2L["49"]["Position"] = UDim2.new(0.056, 0, 0.58, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.deityesp
+G2L["4a"] = Instance.new("TextLabel", G2L["3b"]);
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(69, 70, 70);
+G2L["4a"]["TextSize"] = 14;
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4a"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
+G2L["4a"]["BackgroundTransparency"] = 0.3;
+G2L["4a"]["Size"] = UDim2.new(0, 107, 0, 100);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Text"] = [[Deity ESP]];
+G2L["4a"]["Name"] = [[deityesp]];
+G2L["4a"]["Position"] = UDim2.new(0.74414, 0, 0.00437, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.deityesp.UICorner
+G2L["4b"] = Instance.new("UICorner", G2L["4a"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.deityesp.button1
+G2L["4c"] = Instance.new("TextButton", G2L["4a"]);
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["AutoButtonColor"] = false;
+G2L["4c"]["TextSize"] = 14;
+G2L["4c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4c"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["4c"]["Name"] = [[button1]];
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Text"] = [[]];
+G2L["4c"]["Position"] = UDim2.new(0.3829, 0, 0.255, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.deityesp.button1.UICorner
+G2L["4d"] = Instance.new("UICorner", G2L["4c"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.deityesp.button1.LocalScript
+G2L["4e"] = Instance.new("LocalScript", G2L["4c"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.deityesp.button1.checkmark
+G2L["4f"] = Instance.new("ImageLabel", G2L["4c"]);
+G2L["4f"]["BorderSizePixel"] = 0;
+G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4f"]["Image"] = [[rbxassetid://10709790644]];
+G2L["4f"]["Size"] = UDim2.new(0, 24, 0, 22);
+G2L["4f"]["Visible"] = false;
+G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4f"]["BackgroundTransparency"] = 1;
+G2L["4f"]["Name"] = [[checkmark]];
+G2L["4f"]["Position"] = UDim2.new(0, 0, 0.1, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.deityesp.TextLabel
+G2L["50"] = Instance.new("TextLabel", G2L["4a"]);
+G2L["50"]["TextWrapped"] = true;
+G2L["50"]["BorderSizePixel"] = 0;
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["50"]["TextSize"] = 10;
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["50"]["TextColor3"] = Color3.fromRGB(174, 174, 174);
+G2L["50"]["BackgroundTransparency"] = 1;
+G2L["50"]["Size"] = UDim2.new(0, 94, 0, 42);
+G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["Text"] = [[Create a box around players]];
+G2L["50"]["Position"] = UDim2.new(0.056, 0, 0.58, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe
+G2L["51"] = Instance.new("Frame", G2L["3b"]);
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+G2L["51"]["Size"] = UDim2.new(0, 431, 0, 44);
+G2L["51"]["Position"] = UDim2.new(0.03625, 0, 0.61572, 0);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Name"] = [[aimlockframe]];
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe.UICorner
+G2L["52"] = Instance.new("UICorner", G2L["51"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe.TextLabel
+G2L["53"] = Instance.new("TextLabel", G2L["51"]);
+G2L["53"]["BorderSizePixel"] = 0;
+G2L["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["53"]["TextSize"] = 14;
+G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["53"]["TextColor3"] = Color3.fromRGB(206, 206, 206);
+G2L["53"]["BackgroundTransparency"] = 1;
+G2L["53"]["Size"] = UDim2.new(0, 113, 0, 15);
+G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["53"]["Text"] = [[Universal Aimlock]];
+G2L["53"]["Position"] = UDim2.new(0.032, 0, 0.09, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe.TextLabel
+G2L["54"] = Instance.new("TextLabel", G2L["51"]);
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["TextSize"] = 10;
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["54"]["TextColor3"] = Color3.fromRGB(206, 206, 206);
+G2L["54"]["BackgroundTransparency"] = 1;
+G2L["54"]["Size"] = UDim2.new(0, 113, 0, 25);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Text"] = [[Works in every game]];
+G2L["54"]["Position"] = UDim2.new(0.032, 0, 0.43091, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe.button1
+G2L["55"] = Instance.new("TextButton", G2L["51"]);
+G2L["55"]["BorderSizePixel"] = 0;
+G2L["55"]["AutoButtonColor"] = false;
+G2L["55"]["TextSize"] = 14;
+G2L["55"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["55"]["Size"] = UDim2.new(0, 25, 0, 25);
+G2L["55"]["Name"] = [[button1]];
+G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Text"] = [[]];
+G2L["55"]["Position"] = UDim2.new(0.90726, 0, 0.20955, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe.button1.UICorner
+G2L["56"] = Instance.new("UICorner", G2L["55"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe.button1.LocalScript
+G2L["57"] = Instance.new("LocalScript", G2L["55"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe.button1.checkmark
+G2L["58"] = Instance.new("ImageLabel", G2L["55"]);
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["58"]["Image"] = [[rbxassetid://10709790644]];
+G2L["58"]["Size"] = UDim2.new(0, 24, 0, 22);
+G2L["58"]["Visible"] = false;
+G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["BackgroundTransparency"] = 1;
+G2L["58"]["Name"] = [[checkmark]];
+G2L["58"]["Position"] = UDim2.new(0, 0, 0.1, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.notification
+G2L["59"] = Instance.new("Frame", G2L["3b"]);
+G2L["59"]["Visible"] = false;
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["59"]["Size"] = UDim2.new(0, 531, 0, 54);
+G2L["59"]["Position"] = UDim2.new(-0.13006, 0, 1.10917, 0);
+G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["Name"] = [[notification]];
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.notification.UICorner
+G2L["5a"] = Instance.new("UICorner", G2L["59"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.notification.DropShadowHolder
+G2L["5b"] = Instance.new("Frame", G2L["59"]);
+G2L["5b"]["ZIndex"] = 0;
+G2L["5b"]["BorderSizePixel"] = 0;
+G2L["5b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["5b"]["Name"] = [[DropShadowHolder]];
+G2L["5b"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.notification.DropShadowHolder.DropShadow
+G2L["5c"] = Instance.new("ImageLabel", G2L["5b"]);
+G2L["5c"]["ZIndex"] = 0;
+G2L["5c"]["BorderSizePixel"] = 0;
+G2L["5c"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+G2L["5c"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["5c"]["ImageTransparency"] = 0.5;
+G2L["5c"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5c"]["Image"] = [[rbxassetid://6014261993]];
+G2L["5c"]["Size"] = UDim2.new(1, 47, 1, 47);
+G2L["5c"]["BackgroundTransparency"] = 1;
+G2L["5c"]["Name"] = [[DropShadow]];
+G2L["5c"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.notification.TextLabel
+G2L["5d"] = Instance.new("TextLabel", G2L["59"]);
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["TextSize"] = 20;
+G2L["5d"]["FontFace"] = Font.new([[rbxassetid://12187362578]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["BackgroundTransparency"] = 1;
+G2L["5d"]["Size"] = UDim2.new(0, 200, 0, 17);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Text"] = [[Successfully started Aimlock!]];
+G2L["5d"]["Position"] = UDim2.new(0.311, 0, 0.05, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.notification.TextLabel
+G2L["5e"] = Instance.new("TextLabel", G2L["59"]);
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["TextSize"] = 15;
+G2L["5e"]["FontFace"] = Font.new([[rbxassetid://12187362578]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["BackgroundTransparency"] = 1;
+G2L["5e"]["Size"] = UDim2.new(0, 251, 0, 34);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[To use the aimlock, hold your right mouse button or right click.]];
+G2L["5e"]["Position"] = UDim2.new(0.26204, 0, 0.36482, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.TextLabel
+G2L["5f"] = Instance.new("TextLabel", G2L["3b"]);
+G2L["5f"]["BorderSizePixel"] = 0;
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5f"]["TextSize"] = 11;
+G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5f"]["TextColor3"] = Color3.fromRGB(204, 204, 204);
+G2L["5f"]["BackgroundTransparency"] = 1;
+G2L["5f"]["Size"] = UDim2.new(0, 200, 0, 15);
+G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5f"]["Text"] = [[We recommend to only use 1 ESP as using all 3 can cause your FPS to become horrible.]];
+G2L["5f"]["Position"] = UDim2.new(0.28571, 0, 0.90393, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.UILogo
+G2L["60"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["60"]["BorderSizePixel"] = 0;
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["60"]["Image"] = [[http://www.roblox.com/asset/?id=17140623647]];
+G2L["60"]["Size"] = UDim2.new(0, 48, 0, 44);
+G2L["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["60"]["BackgroundTransparency"] = 1;
+G2L["60"]["Name"] = [[UILogo]];
+G2L["60"]["Position"] = UDim2.new(0.0113, 0, 0.02397, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.UILogo.UIGradient
+G2L["61"] = Instance.new("UIGradient", G2L["60"]);
+G2L["61"]["Rotation"] = 100;
+G2L["61"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.105, Color3.fromRGB(110, 111, 111)),ColorSequenceKeypoint.new(0.230, Color3.fromRGB(160, 161, 161)),ColorSequenceKeypoint.new(0.382, Color3.fromRGB(181, 181, 181)),ColorSequenceKeypoint.new(0.557, Color3.fromRGB(242, 242, 242)),ColorSequenceKeypoint.new(0.847, Color3.fromRGB(125, 126, 126)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 89, 89))};
+
+-- StarterGui.MarsHubUI.UIHolder.Drag
+G2L["62"] = Instance.new("LocalScript", G2L["2"]);
+G2L["62"]["Name"] = [[Drag]];
+
+-- StarterGui.MarsHubUI.UIHolder.Audios
+G2L["63"] = Instance.new("Folder", G2L["2"]);
+G2L["63"]["Name"] = [[Audios]];
+
+-- StarterGui.MarsHubUI.UIHolder.Audios.ButtonClicks
+G2L["64"] = Instance.new("Sound", G2L["63"]);
+G2L["64"]["Volume"] = 1.5;
+G2L["64"]["RollOffMode"] = Enum.RollOffMode.InverseTapered;
+G2L["64"]["Name"] = [[ButtonClicks]];
+G2L["64"]["SoundId"] = [[rbxassetid://6042054037]];
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement
+G2L["65"] = Instance.new("Folder", G2L["2"]);
+G2L["65"]["Name"] = [[HomeElement]];
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame
+G2L["66"] = Instance.new("Frame", G2L["65"]);
+G2L["66"]["BorderSizePixel"] = 0;
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["Size"] = UDim2.new(0, 469, 0, 239);
+G2L["66"]["Position"] = UDim2.new(0.11488, 0, 0.17466, 0);
+G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.plrembed
+G2L["67"] = Instance.new("ImageLabel", G2L["66"]);
+G2L["67"]["BorderSizePixel"] = 0;
+G2L["67"]["BackgroundColor3"] = Color3.fromRGB(106, 107, 107);
+G2L["67"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["67"]["Size"] = UDim2.new(0, 76, 0, 75);
+G2L["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["67"]["BackgroundTransparency"] = 0.8;
+G2L["67"]["Name"] = [[plrembed]];
+G2L["67"]["Position"] = UDim2.new(0.4126, 0, 0.07141, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.plrembed.UICorner
+G2L["68"] = Instance.new("UICorner", G2L["67"]);
+G2L["68"]["CornerRadius"] = UDim.new(1, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.plrembed.LocalScript
+G2L["69"] = Instance.new("LocalScript", G2L["67"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.plrembed.UIStroke
+G2L["6a"] = Instance.new("UIStroke", G2L["67"]);
+G2L["6a"]["Transparency"] = 0.6;
+G2L["6a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["6a"]["Thickness"] = 4;
+G2L["6a"]["Color"] = Color3.fromRGB(140, 140, 140);
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.gamedetection
+G2L["6b"] = Instance.new("TextLabel", G2L["66"]);
+G2L["6b"]["TextWrapped"] = true;
+G2L["6b"]["BorderSizePixel"] = 0;
+G2L["6b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6b"]["TextSize"] = 20;
+G2L["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6b"]["TextColor3"] = Color3.fromRGB(214, 214, 214);
+G2L["6b"]["BackgroundTransparency"] = 1;
+G2L["6b"]["Size"] = UDim2.new(0, 209, 0, 39);
+G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6b"]["Text"] = [[Game:]];
+G2L["6b"]["Name"] = [[gamedetection]];
+G2L["6b"]["Position"] = UDim2.new(0.01694, 0, 0.69826, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.gamedetection.LocalScript
+G2L["6c"] = Instance.new("LocalScript", G2L["6b"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.detection
+G2L["6d"] = Instance.new("TextLabel", G2L["66"]);
+G2L["6d"]["TextWrapped"] = true;
+G2L["6d"]["BorderSizePixel"] = 0;
+G2L["6d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6d"]["TextSize"] = 20;
+G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6d"]["TextColor3"] = Color3.fromRGB(214, 214, 214);
+G2L["6d"]["BackgroundTransparency"] = 1;
+G2L["6d"]["Size"] = UDim2.new(0, 209, 0, 30);
+G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6d"]["Text"] = [[Status: Undetected]];
+G2L["6d"]["Name"] = [[detection]];
+G2L["6d"]["Position"] = UDim2.new(0.01694, 0, 0.83143, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.plrtitle
+G2L["6e"] = Instance.new("TextLabel", G2L["66"]);
+G2L["6e"]["TextWrapped"] = true;
+G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["TextSize"] = 25;
+G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["BackgroundTransparency"] = 1;
+G2L["6e"]["Size"] = UDim2.new(0, 321, 0, 55);
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["Text"] = [[nil]];
+G2L["6e"]["Name"] = [[plrtitle]];
+G2L["6e"]["Position"] = UDim2.new(0.15086, 0, 0.38265, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.plrtitle.LocalScript
+G2L["6f"] = Instance.new("LocalScript", G2L["6e"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.credits
+G2L["70"] = Instance.new("TextLabel", G2L["66"]);
+G2L["70"]["TextWrapped"] = true;
+G2L["70"]["BorderSizePixel"] = 0;
+G2L["70"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["TextSize"] = 15;
+G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["70"]["TextColor3"] = Color3.fromRGB(214, 214, 214);
+G2L["70"]["BackgroundTransparency"] = 1;
+G2L["70"]["Size"] = UDim2.new(0, 77, 0, 17);
+G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Text"] = [[Made by Mars]];
+G2L["70"]["Name"] = [[credits]];
+G2L["70"]["Position"] = UDim2.new(0.83783, 0, 0.92678, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement
+G2L["71"] = Instance.new("Folder", G2L["2"]);
+G2L["71"]["Name"] = [[ScriptElement]];
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder
+G2L["72"] = Instance.new("Frame", G2L["71"]);
+G2L["72"]["Visible"] = false;
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["Size"] = UDim2.new(0, 467, 0, 239);
+G2L["72"]["Position"] = UDim2.new(0.11488, 0, 0.17466, 0);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Name"] = [[ScriptsHolder]];
+G2L["72"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.script1
+G2L["73"] = Instance.new("TextButton", G2L["72"]);
+G2L["73"]["BorderSizePixel"] = 0;
+G2L["73"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["73"]["TextSize"] = 14;
+G2L["73"]["TextColor3"] = Color3.fromRGB(209, 209, 209);
+G2L["73"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["73"]["BackgroundColor3"] = Color3.fromRGB(102, 103, 103);
+G2L["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["73"]["Size"] = UDim2.new(0, 435, 0, 28);
+G2L["73"]["BackgroundTransparency"] = 0.5;
+G2L["73"]["Name"] = [[script1]];
+G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["73"]["Text"] = [[]];
+G2L["73"]["Position"] = UDim2.new(0.0364, 0, 0.03766, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.script1.UICorner
+G2L["74"] = Instance.new("UICorner", G2L["73"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.script1.TextLabel
+G2L["75"] = Instance.new("TextLabel", G2L["73"]);
+G2L["75"]["BorderSizePixel"] = 0;
+G2L["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["75"]["TextSize"] = 14;
+G2L["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["75"]["TextColor3"] = Color3.fromRGB(207, 207, 207);
+G2L["75"]["BackgroundTransparency"] = 1;
+G2L["75"]["Size"] = UDim2.new(0, 101, 0, 19);
+G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["75"]["Text"] = [[Auto Parry]];
+G2L["75"]["Position"] = UDim2.new(0, 0, 0.14286, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.script1.TextLabel
+G2L["76"] = Instance.new("TextLabel", G2L["73"]);
+G2L["76"]["BorderSizePixel"] = 0;
+G2L["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["76"]["TextSize"] = 10;
+G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["76"]["TextColor3"] = Color3.fromRGB(207, 207, 207);
+G2L["76"]["BackgroundTransparency"] = 1;
+G2L["76"]["Size"] = UDim2.new(0, 101, 0, 19);
+G2L["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["76"]["Text"] = [[100% WinRate]];
+G2L["76"]["Position"] = UDim2.new(0.78851, 0, 0.14286, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.script1.LocalScript
+G2L["77"] = Instance.new("LocalScript", G2L["73"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame
+G2L["78"] = Instance.new("Frame", G2L["72"]);
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(74, 75, 75);
+G2L["78"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["78"]["Position"] = UDim2.new(0.03854, 0, 0.23013, 0);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame.UICorner
+G2L["79"] = Instance.new("UICorner", G2L["78"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame.TextLabel
+G2L["7a"] = Instance.new("TextLabel", G2L["78"]);
+G2L["7a"]["BorderSizePixel"] = 0;
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["TextSize"] = 17;
+G2L["7a"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7a"]["TextColor3"] = Color3.fromRGB(218, 218, 218);
+G2L["7a"]["BackgroundTransparency"] = 1;
+G2L["7a"]["Size"] = UDim2.new(0, 104, 0, 19);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["Text"] = [[Follow Ball]];
+G2L["7a"]["Position"] = UDim2.new(-0.02, 0, 0.005, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame.TextLabel
+G2L["7b"] = Instance.new("TextLabel", G2L["78"]);
+G2L["7b"]["TextWrapped"] = true;
+G2L["7b"]["BorderSizePixel"] = 0;
+G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7b"]["TextSize"] = 14;
+G2L["7b"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7b"]["TextColor3"] = Color3.fromRGB(218, 218, 218);
+G2L["7b"]["BackgroundTransparency"] = 1;
+G2L["7b"]["Size"] = UDim2.new(0, 104, 0, 43);
+G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7b"]["Text"] = [[Makes your camera follow the ball (Toggable)]];
+G2L["7b"]["Position"] = UDim2.new(-0.01, 0, 0.565, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame.button1
+G2L["7c"] = Instance.new("TextButton", G2L["78"]);
+G2L["7c"]["BorderSizePixel"] = 0;
+G2L["7c"]["TextSize"] = 14;
+G2L["7c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7c"]["Size"] = UDim2.new(0, 34, 0, 33);
+G2L["7c"]["Name"] = [[button1]];
+G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7c"]["Text"] = [[]];
+G2L["7c"]["Position"] = UDim2.new(0.31925, 0, 0.23347, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame.button1.UICorner
+G2L["7d"] = Instance.new("UICorner", G2L["7c"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame.button1.LocalScript
+G2L["7e"] = Instance.new("LocalScript", G2L["7c"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame.button1.checkmark
+G2L["7f"] = Instance.new("ImageLabel", G2L["7c"]);
+G2L["7f"]["BorderSizePixel"] = 0;
+G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7f"]["Image"] = [[rbxassetid://10709790644]];
+G2L["7f"]["Size"] = UDim2.new(0, 24, 0, 22);
+G2L["7f"]["Visible"] = false;
+G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7f"]["BackgroundTransparency"] = 1;
+G2L["7f"]["Name"] = [[checkmark]];
+G2L["7f"]["Position"] = UDim2.new(0.147, 0, 0.2, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.notification
+G2L["80"] = Instance.new("Frame", G2L["72"]);
+G2L["80"]["Visible"] = false;
+G2L["80"]["BorderSizePixel"] = 0;
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(60, 61, 61);
+G2L["80"]["Size"] = UDim2.new(0, 531, 0, 33);
+G2L["80"]["Position"] = UDim2.new(-0.13062, 0, 1.06695, 0);
+G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["80"]["Name"] = [[notification]];
+G2L["80"]["BackgroundTransparency"] = 0.3;
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.notification.DropShadowHolder
+G2L["81"] = Instance.new("Frame", G2L["80"]);
+G2L["81"]["ZIndex"] = 0;
+G2L["81"]["BorderSizePixel"] = 0;
+G2L["81"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["81"]["Name"] = [[DropShadowHolder]];
+G2L["81"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.notification.DropShadowHolder.DropShadow
+G2L["82"] = Instance.new("ImageLabel", G2L["81"]);
+G2L["82"]["ZIndex"] = 0;
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+G2L["82"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["82"]["ImageTransparency"] = 0.5;
+G2L["82"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["82"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["82"]["Image"] = [[rbxassetid://6014261993]];
+G2L["82"]["Size"] = UDim2.new(1, 47, 1, 47);
+G2L["82"]["BackgroundTransparency"] = 1;
+G2L["82"]["Name"] = [[DropShadow]];
+G2L["82"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.notification.UICorner
+G2L["83"] = Instance.new("UICorner", G2L["80"]);
+
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.notification.TextLabel
+G2L["84"] = Instance.new("TextLabel", G2L["80"]);
+G2L["84"]["BorderSizePixel"] = 0;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["84"]["TextSize"] = 14;
+G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["84"]["TextColor3"] = Color3.fromRGB(226, 226, 226);
+G2L["84"]["BackgroundTransparency"] = 1;
+G2L["84"]["Size"] = UDim2.new(0, 135, 0, 10);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Text"] = [[Successfully executed Follow Ball Script!]];
+G2L["84"]["Position"] = UDim2.new(0.37288, 0, 0, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.notification.TextLabel
+G2L["85"] = Instance.new("TextLabel", G2L["80"]);
+G2L["85"]["BorderSizePixel"] = 0;
+G2L["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["TextSize"] = 12;
+G2L["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["85"]["TextColor3"] = Color3.fromRGB(226, 226, 226);
+G2L["85"]["BackgroundTransparency"] = 1;
+G2L["85"]["Size"] = UDim2.new(0, 135, 0, 10);
+G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["85"]["Text"] = [[To use it, click P to toggle it on and click L to toggle it off.]];
+G2L["85"]["Position"] = UDim2.new(0.373, 0, 0.5, 0);
+
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Home.LocalScript
+local function C_a()
+local script = G2L["a"];
 	local button = script.Parent
 	local settingsframe = button.Parent.Parent.SettingElement.ScrollingFrame
 	local homeframe = button.Parent.Parent.HomeElement.Frame
@@ -1176,11 +1302,11 @@ local function DQYK_fake_script() -- Home.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(DQYK_fake_script)()
-local function BHAZQN_fake_script() -- Scripts.LocalScript 
-	local script = Instance.new('LocalScript', Scripts)
-
+end;
+task.spawn(C_a);
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Scripts.LocalScript
+local function C_c()
+local script = G2L["c"];
 	local ButtonClick = script.Parent.Parent.Parent.Audios.ButtonClicks
 	local button = script.Parent
 	local scriptelement = button.Parent.Parent.ScriptElement.ScriptsHolder
@@ -1210,11 +1336,11 @@ local function BHAZQN_fake_script() -- Scripts.LocalScript
 			end
 		end
 	end)
-end
-coroutine.wrap(BHAZQN_fake_script)()
-local function USHIQQB_fake_script() -- Visuals.LocalScript 
-	local script = Instance.new('LocalScript', Visuals)
-
+end;
+task.spawn(C_c);
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Visuals.LocalScript
+local function C_e()
+local script = G2L["e"];
 	local button = script.Parent
 	local settingsframe = button.Parent.Parent.SettingElement.ScrollingFrame
 	local homeframe = button.Parent.Parent.HomeElement.Frame
@@ -1244,11 +1370,11 @@ local function USHIQQB_fake_script() -- Visuals.LocalScript
 			end
 		end
 	end)
-end
-coroutine.wrap(USHIQQB_fake_script)()
-local function QRECH_fake_script() -- Settings.LocalScript 
-	local script = Instance.new('LocalScript', Settings)
-
+end;
+task.spawn(C_e);
+-- StarterGui.MarsHubUI.UIHolder.ButtonHolder.Settings.LocalScript
+local function C_11()
+local script = G2L["11"];
 	local button = script.Parent
 	local settingsframe = button.Parent.Parent.SettingElement.ScrollingFrame
 	local homeframe = button.Parent.Parent.HomeElement.Frame
@@ -1279,11 +1405,11 @@ local function QRECH_fake_script() -- Settings.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(QRECH_fake_script)()
-local function XASL_fake_script() -- button2.LocalScript 
-	local script = Instance.new('LocalScript', button2)
-
+end;
+task.spawn(C_11);
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button2.LocalScript
+local function C_1b()
+local script = G2L["1b"];
 	local button = script.Parent
 	local bluecolor = Color3.fromRGB(17, 95, 212)
 	local imagelabel = button.checkmark
@@ -1314,11 +1440,11 @@ local function XASL_fake_script() -- button2.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(XASL_fake_script)()
-local function KMZAI_fake_script() -- button3.LocalScript 
-	local script = Instance.new('LocalScript', button3)
-
+end;
+task.spawn(C_1b);
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button3.LocalScript
+local function C_21()
+local script = G2L["21"];
 	local button = script.Parent
 	local bluecolor = Color3.fromRGB(17, 95, 212)
 	local imagelabel = button.checkmark
@@ -1353,11 +1479,11 @@ local function KMZAI_fake_script() -- button3.LocalScript
 	
 	button.MouseButton1Click:Connect(toggleButtonState)
 	
-end
-coroutine.wrap(KMZAI_fake_script)()
-local function XDAF_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
+end;
+task.spawn(C_21);
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextButton.LocalScript
+local function C_27()
+local script = G2L["27"];
 	local player = game.Players.LocalPlayer
 	
 	script.Parent.Changed:Connect(function()
@@ -1369,11 +1495,11 @@ local function XDAF_fake_script() -- TextButton.LocalScript
 			camera.FieldOfView = 70 + (0.60*volume)
 		end
 	end)
-end
-coroutine.wrap(XDAF_fake_script)()
-local function GBGX_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
+end;
+task.spawn(C_27);
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.LocalScript
+local function C_28()
+local script = G2L["28"];
 	local Player = game:GetService("Players").LocalPlayer
 	local UIS = game:GetService("UserInputService")
 	local Runservice = game:GetService("RunService")
@@ -1413,22 +1539,22 @@ local function GBGX_fake_script() -- Frame.LocalScript
 			Button.Position = UDim2.new(percentage,0,BtnPos.Y.Scale,BtnPos.Y.Offset)
 		end
 	end)
-end
-coroutine.wrap(GBGX_fake_script)()
-local function UEVZCI_fake_script() -- TextBox.LocalScript 
-	local script = Instance.new('LocalScript', TextBox)
-
+end;
+task.spawn(C_28);
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextBox.LocalScript
+local function C_32()
+local script = G2L["32"];
 	local textbox = script.Parent
 	local plr = game:GetService("Players").LocalPlayer
 	
 	textbox.Changed:Connect(function()
 		plr.Character.Humanoid.WalkSpeed = textbox.Text
 	end)
-end
-coroutine.wrap(UEVZCI_fake_script)()
-local function MEAH_fake_script() -- button1.LocalScript 
-	local script = Instance.new('LocalScript', button1)
-
+end;
+task.spawn(C_32);
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.button1.LocalScript
+local function C_35()
+local script = G2L["35"];
 	local button = script.Parent
 	local bluecolor = Color3.fromRGB(17, 95, 212)
 	local imagelabel = button.checkmark
@@ -1453,22 +1579,22 @@ local function MEAH_fake_script() -- button1.LocalScript
 		end
 	end)
 	
-end
-coroutine.wrap(MEAH_fake_script)()
-local function GJTCQ_fake_script() -- TextBox_2.LocalScript 
-	local script = Instance.new('LocalScript', TextBox_2)
-
+end;
+task.spawn(C_35);
+-- StarterGui.MarsHubUI.UIHolder.SettingElement.ScrollingFrame.Frame.TextBox.LocalScript
+local function C_39()
+local script = G2L["39"];
 	local textbox = script.Parent
 	local plr = game:GetService("Players").LocalPlayer
 	
 	textbox.Changed:Connect(function()
 		plr.Character.Humanoid.JumpPower = textbox.Text
 	end)
-end
-coroutine.wrap(GJTCQ_fake_script)()
-local function MEUNYT_fake_script() -- button1_2.LocalScript 
-	local script = Instance.new('LocalScript', button1_2)
-
+end;
+task.spawn(C_39);
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.cornerbox.button1.LocalScript
+local function C_40()
+local script = G2L["40"];
 	local button = script.Parent
 	local bluecolor = Color3.fromRGB(17, 95, 212)
 	local imagelabel = button.checkmark
@@ -1479,11 +1605,11 @@ local function MEUNYT_fake_script() -- button1_2.LocalScript
 		imagelabel.Visible = true
 	end)
 	
-end
-coroutine.wrap(MEUNYT_fake_script)()
-local function GFSD_fake_script() -- button1_3.LocalScript 
-	local script = Instance.new('LocalScript', button1_3)
-
+end;
+task.spawn(C_40);
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.skeletonesp.button1.LocalScript
+local function C_47()
+local script = G2L["47"];
 	local button = script.Parent
 	local bluecolor = Color3.fromRGB(17, 95, 212)
 	local imagelabel = button.checkmark
@@ -1509,11 +1635,11 @@ local function GFSD_fake_script() -- button1_3.LocalScript
 			imagelabel.Visible = true
 	end)
 	
-end
-coroutine.wrap(GFSD_fake_script)()
-local function GAQN_fake_script() -- button1_4.LocalScript 
-	local script = Instance.new('LocalScript', button1_4)
-
+end;
+task.spawn(C_47);
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.deityesp.button1.LocalScript
+local function C_4e()
+local script = G2L["4e"];
 	local button = script.Parent
 	local bluecolor = Color3.fromRGB(17, 95, 212)
 	local imagelabel = button.checkmark
@@ -1524,11 +1650,11 @@ local function GAQN_fake_script() -- button1_4.LocalScript
 		imagelabel.Visible = true
 	end)
 	
-end
-coroutine.wrap(GAQN_fake_script)()
-local function OJIHG_fake_script() -- button1_5.LocalScript 
-	local script = Instance.new('LocalScript', button1_5)
-
+end;
+task.spawn(C_4e);
+-- StarterGui.MarsHubUI.UIHolder.VisualsElement.Holder.aimlockframe.button1.LocalScript
+local function C_57()
+local script = G2L["57"];
 	local button = script.Parent
 	local bluecolor = Color3.fromRGB(17, 95, 212)
 	local imagelabel = button.checkmark
@@ -1543,11 +1669,11 @@ local function OJIHG_fake_script() -- button1_5.LocalScript
 		notificationframe.Visible = false
 	end)
 	
-end
-coroutine.wrap(OJIHG_fake_script)()
-local function ARYEDOG_fake_script() -- UIHolder.Drag 
-	local script = Instance.new('LocalScript', UIHolder)
-
+end;
+task.spawn(C_57);
+-- StarterGui.MarsHubUI.UIHolder.Drag
+local function C_62()
+local script = G2L["62"];
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -1587,11 +1713,11 @@ local function ARYEDOG_fake_script() -- UIHolder.Drag
 			update(input)
 		end
 	end)
-end
-coroutine.wrap(ARYEDOG_fake_script)()
-local function OVLJ_fake_script() -- plrembed.LocalScript 
-	local script = Instance.new('LocalScript', plrembed)
-
+end;
+task.spawn(C_62);
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.plrembed.LocalScript
+local function C_69()
+local script = G2L["69"];
 	local imageLabel = script.Parent
 	local userId = game:GetService("Players").LocalPlayer.UserId
 	
@@ -1602,11 +1728,11 @@ local function OVLJ_fake_script() -- plrembed.LocalScript
 	if success then
 		imageLabel.Image = image
 	end
-end
-coroutine.wrap(OVLJ_fake_script)()
-local function DFAEHA_fake_script() -- gamedetection.LocalScript 
-	local script = Instance.new('LocalScript', gamedetection)
-
+end;
+task.spawn(C_69);
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.gamedetection.LocalScript
+local function C_6c()
+local script = G2L["6c"];
 	local textlabel = script.Parent
 	
 	-- Get the game's name
@@ -1615,30 +1741,30 @@ local function DFAEHA_fake_script() -- gamedetection.LocalScript
 	-- Update the text label with the game's name
 	textlabel.Text = "Game: " .. gamename
 	
-end
-coroutine.wrap(DFAEHA_fake_script)()
-local function PZPZ_fake_script() -- plrtitle.LocalScript 
-	local script = Instance.new('LocalScript', plrtitle)
-
+end;
+task.spawn(C_6c);
+-- StarterGui.MarsHubUI.UIHolder.HomeElement.Frame.plrtitle.LocalScript
+local function C_6f()
+local script = G2L["6f"];
 	local textLabel = script.Parent
 	local plrname = game:GetService("Players").LocalPlayer.Name
 	
 	textLabel.Text = "Welcome " .. plrname
-end
-coroutine.wrap(PZPZ_fake_script)()
-local function KCWD_fake_script() -- script1.LocalScript 
-	local script = Instance.new('LocalScript', script1)
-
+end;
+task.spawn(C_6f);
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.script1.LocalScript
+local function C_77()
+local script = G2L["77"];
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/spookyoregon/bladeball/main/autoparry"))()
 	end)
-end
-coroutine.wrap(KCWD_fake_script)()
-local function DKOJX_fake_script() -- button1_6.LocalScript 
-	local script = Instance.new('LocalScript', button1_6)
-
+end;
+task.spawn(C_77);
+-- StarterGui.MarsHubUI.UIHolder.ScriptElement.ScriptsHolder.Frame.button1.LocalScript
+local function C_7e()
+local script = G2L["7e"];
 	local button = script.Parent
 	local bluecolor = Color3.fromRGB(17, 95, 212)
 	local imagelabel = button.checkmark
@@ -1653,5 +1779,7 @@ local function DKOJX_fake_script() -- button1_6.LocalScript
 		notification.Visible = false
 	end)
 	
-end
-coroutine.wrap(DKOJX_fake_script)()
+end;
+task.spawn(C_7e);
+
+return G2L["1"], require;
