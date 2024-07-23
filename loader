@@ -1,0 +1,162 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 8 | Scripts: 1 | Modules: 0
+local G2L = {};
+
+-- StarterGui.LoaderUI
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+G2L["1"]["Name"] = [[LoaderUI]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.LoaderUI.Holder
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
+G2L["2"]["Position"] = UDim2.new(0.40991, 0, 0.28346, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[Holder]];
+G2L["2"]["BackgroundTransparency"] = 0.4;
+
+-- StarterGui.LoaderUI.Holder.TextLabel
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["TextSize"] = 18;
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["3"]["Visible"] = false;
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[Detecting Game...]];
+G2L["3"]["Position"] = UDim2.new(0.0614, 0, 0.05682, 0);
+
+-- StarterGui.LoaderUI.Holder.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["2"]);
+G2L["4"]["Transparency"] = 0.5;
+G2L["4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["4"]["Thickness"] = 3;
+G2L["4"]["Color"] = Color3.fromRGB(177, 177, 177);
+
+-- StarterGui.LoaderUI.Holder.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.LoaderUI.Holder.t1
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextSize"] = 15;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(151, 152, 152);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[]];
+G2L["6"]["Name"] = [[t1]];
+G2L["6"]["Position"] = UDim2.new(0.0614, 0, 0.16288, 0);
+
+-- StarterGui.LoaderUI.Holder.t2
+G2L["7"] = Instance.new("TextLabel", G2L["2"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["TextSize"] = 17;
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/JosefinSans.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(221, 222, 224);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["7"]["Visible"] = false;
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[Game Supported:]];
+G2L["7"]["Name"] = [[t2]];
+G2L["7"]["Position"] = UDim2.new(0.0614, 0, 0.57197, 0);
+
+-- StarterGui.LoaderUI.Holder.ImageLabel
+G2L["8"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["Image"] = [[rbxassetid://10747383819]];
+G2L["8"]["Size"] = UDim2.new(0, 31, 0, 32);
+G2L["8"]["Visible"] = false;
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Position"] = UDim2.new(0.43421, 0, 0.72348, 0);
+
+-- StarterGui.LoaderUI.Holder.LocalScript
+local function C_5()
+local script = G2L["5"];
+	local TweenService = game:GetService("TweenService")
+	local MarketplaceService = game:GetService("MarketplaceService")
+	local frame = script.Parent
+	local screengui = frame.Parent
+	local textlabel = frame.TextLabel
+	local t1 = frame.t1
+	local t2 = frame.t2
+	local imagelabel = frame.ImageLabel
+	local placeId = game.PlaceId
+	
+	local function getGameName()
+		local placeId = game.PlaceId
+		local success, gameInfo = pcall(function()
+			return MarketplaceService:GetProductInfo(placeId)
+		end)
+		return success and gameInfo.Name or "Unknown Game"
+	end
+	
+	local targetSize = UDim2.new(0, 228, 0, 264)
+	
+	local tweenInfo = TweenInfo.new(
+		1, 
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.In,
+		0,
+		false,
+		0
+	)
+	
+	local tween = TweenService:Create(frame, tweenInfo, {Size = targetSize})
+	
+	textlabel.Visible = false
+	
+	tween:Play()
+	
+	tween.Completed:Connect(function()
+		wait(1)
+		textlabel.Visible = true
+		wait(2)
+		t1.Text = getGameName() 
+		wait(1.2)
+		t2.Visible = true
+		if placeId == 13772394625 then
+			imagelabel.Visible = true
+			imagelabel.Image = "rbxassetid://10709790387"
+			wait(1)
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/1andonlymars/MarsHub/main/Hub"))()
+			screengui:Destroy()
+		else
+			if placeId == 142823291 then
+				imagelabel.Visible = true
+				imagelabel.Image = "rbxassetid://10709790387"
+				wait(1)
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/spookyoregon/e/main/mm2"))()
+				screengui:Destroy()
+		else
+			imagelabel.Visible = true
+			imagelabel.Image = "rbxassetid://10747383819"
+			wait(1)
+			game.Players.LocalPlayer:Kick("Game Not Supported")
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_5);
+
+return G2L["1"], require;
