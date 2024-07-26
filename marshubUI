@@ -2635,24 +2635,29 @@ task.spawn(C_8c);
 -- StarterGui.MarsHubUI.LocalScript
 local function C_8d()
 local script = G2L["8d"];
+	local supportedGameName = "Blade Ball"
 	local supportedGameId = 13772394625
-	
-	local function checkGameId()
-		local currentGameId = game.PlaceId
-	
-		if currentGameId == supportedGameId then
+
+	local function checkGameName()
+	local success, result = pcall(function()
+		local marketplaceService = game:GetService("MarketplaceService")
+		local gameInfo = marketplaceService:GetProductInfo(game.PlaceId)
+		return gameInfo.Name
+	end)
+
+	if success and result then
+		local gameName = result
+		if gameName:lower():find(supportedGameName:lower()) or game.PlaceId == supportedGameId then
 		else
 			game.Players.LocalPlayer:Kick("Game not Supported")
 		end
-	end
-	
-	local success, errorMessage = pcall(function()
-		checkGameId()
-	end)
-	
-	if not success then
+	else
 		game.Players.LocalPlayer:Kick("Error, Please Rejoin!")
 	end
+end
+
+checkGameName()
+
 	
 end;
 task.spawn(C_8d);
