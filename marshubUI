@@ -2521,7 +2521,9 @@ local script = G2L["8c"];
 	local allowedPlayers = {
 		2482894988,
 		3131603504,
-		7041084174
+		7041084174,
+		7116716649,
+		533613333
 	}
 	
 	local plr = game.Players.LocalPlayer
