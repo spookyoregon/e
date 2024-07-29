@@ -2509,7 +2509,8 @@ local script = G2L["8b"];
 		3131603504,
 		7041084174,
 		7116716649,
-		533613333
+		533613333,
+		5747132679
 	}
 	
 	local plr = game.Players.LocalPlayer
